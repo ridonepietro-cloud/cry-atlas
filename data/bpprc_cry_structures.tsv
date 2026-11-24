@@ -1,0 +1,35 @@
+name	old_name	accession	pdb	modified	comment	year	doi
+Cry Chimera	None	6DJ4_A	6DJ4	Yes	Chimera of Cry1Ab, 1Ac, 1F: does not associate with a single database entry. Described as Cry1A.105	2018	10.1016/j.yrtph.2018.09.003
+Cry chimera	None	6OWK_A	6OWK	Yes	Chimeric protein (named &quot;Cry1B tryptic core variant&quot; in publication). This is a disabled insecticidal protein mutant [A160N,N167D] of an artificial chimera Cry1B.867: a fusion of domains 1+2 of Cry1Be5 with domain 3 of Cry1Ka2 (residues 1-502 and 473-621 respectively with reference to the parental genes).	2019	10.1128/AEM.00579-19
+Cry variant	None	6WPC_A	6WPC	Yes	Non-natural Cry variant named Cry1A.2, tryptic core	2021	10.1371/journal.pone.0249150
+Cry11Aa1, Cry11Aa3	CryIVD, Cry11Aa3	AAA22352, CAD30081	7QX5	Yes	Y449F mutant pH7 natural crystals. Sequence also matches Cry11Aa3 (CAD30081)	2022	10.1038/s41467-022-31746-x
+Cry11Aa1, Cry11Aa3	CryIVD, Cry11Aa3	AAA22352, CAD30081	7QX7	Yes	F17Y mutant, pH7 natural crystals. Sequence also matches Cry11Aa3 (CAD30081)	2022	10.1038/s41467-022-31746-x
+Cry11Aa1, Cry11Aa3	CryIVD, Cry11Aa3	AAA22352, CAD30081	7QX4	No	pH7 natural crystals. Sequence also matches Cry11Aa3 (CAD30081)	2022	10.1038/s41467-022-31746-x
+Cry11Aa1, Cry11Aa3	CryIVD, Cry11Aa3	AAA22352, CAD30081	7QX6	Yes	E583Q mutant, pH7 natural crystals. Sequence also matches Cry11Aa3 (CAD30081)	2022	10.1038/s41467-022-31746-x
+Cry11Ba1	Jeg80	CAA60504	7QYD	No	pH6.5 natural crystals	2022	10.1038/s41467-022-31746-x
+Cry11Ba1	Jeg80	CAA60504	7R1E	No	pH10.4 natural crystals	2022	10.1038/s41467-022-31746-x
+Cry1Aa	None	None	8W7N	No	Full length Cry1Aa protoxin by serial synchrotron rotation crystallography NOTE sequence in pdb file does not match sequence from supplementary figure 2 in the paper so the exact sequence is unclear.	2023	10.1016/j.bbrc.2023.149144
+Cry1Aa6	CryIA(a)	AAA86265	1CIY	No		1997	10.1006/jmbi.1995.0630
+Cry1Ac4	Cry1Ac4	AAA73077	4W8J	Yes	Full-length (133 kDa) protoxin: 14x Cys-Ser and F462V mutant of Cry1Ac4	2014	10.1002/pro.2536
+Cry1Ac7, Cry1Ac8	Cry1Ac7, Cry1Ac8	AAB46989, AAC44841	4ARX	No		2013	10.1107/s090744490101040x
+Cry1Ac7, Cry1Ac8	Cry1Ac7, Cry1Ac8	AAB46989, AAC44841	4ARY	No	Bound to GalNAc	2013	10.1107/s090744490101040x
+Cry1Ca18	Cry1Ca18	PQ691233	9QXQ	No	pH9 Full length protoxin structure of natural crystals by XFEL	2026	10.1016/j.str.2026.01.014
+Cry1Ca18	Cry1Ca18	PQ691233	9H99	No	pH7 Full length protoxin structure of natural crystals by XFEL	2026	10.1016/j.str.2026.01.014
+Cry1Da1	Cry1Da1	CAA38099	6OVB	Yes	V108C, E128C, S282V, Y316S, I368P mutant of Cry1Da1	2019	10.1128/AEM.00579-19
+Cry1Fa	None	None	9BUV	Yes	R226Q mutant of Cry1Fa1 or Cry1Fa2 (which are equivalent sequences)	2024	
+Cry2Aa	Cry2Aa	multiple, see comments	1I5P	No	Sequence in the structure matches Cry2Aa1, Cry2Aa2, Cry2Aa9, Cry2Aa10, Cry2Aa19, Cry2Aa20, Cry2Aa21 (AAA22335, AF433645, AYN72228, AAA83516, AYN72229, AYN72230, AAO13750)	2001	10.1016/s0969-2126(01)00601-3
+Cry3Aa	Cry3Aa	multiple, see comments	1DLC	No	Sequence in structure matches Cry3Aa2, Cry3Aa3, Cry3Aa5, Cry3Aa6, Cry3Aa12 (AAA22541, CAA68482, AAA50255, AAC43266, ABY49136)	1994	10.1038/353815a0
+Cry3Aa	Cry3Aa	multiple, see comments	6LFP		Co-crystalised in vivo with an entrapped recombinant lipase. Sequence in structure matches Cry3Aa2, Cry3Aa3, Cry3Aa5, Cry3Aa6, Cry3Aa12 (AAA22541, CAA68482, AAA50255, AAC43266, ABY49136)	2020	10.1021/jacs.9b13462
+Cry3Aa	Cry3Aa	multiple, see comments	4QX0, 4QX1, 4QX2, 4QX3,	No	XFEL structure from natural crystals. Sequence in structure matches Cry3Aa2, Cry3Aa3, Cry3Aa5, Cry3Aa6, Cry3Aa12 (AAA22541, CAA68482, AAA50255, AAC43266, ABY49136)	2014	10.1073/pnas.1413456111
+Cry3Aa	Cry3Aa	multiple, see comments	7EAR	Yes	Positive charged mutant with multiple mutations (N391K, N395K, E423K, Q430K, D432K, E433K, T436K, T461K, D462K, E463K, E466K). Sequence in structure matches Cry3Aa2, Cry3Aa3, Cry3Aa5, Cry3Aa6, Cry3Aa12 (AAA22541, CAA68482, AAA50255, AAC43266, ABY49136) with above mutations	2021	10.1016/j.biomaterials.2021.120759
+Cry3Aa	None	multiple, see comments	8YQH	Yes	Polyethylenimine-modified Sequence in PDB entry is identical to Cry3Aa2 / Cry3Aa3 / Cry3Aa5 / Cry3Aa6 / Cry3Aa12 (AAA22541, CAA68482, AAA50255, AAC43266, ABY49136)	2024	10.1021/jacs.4c04725
+Cry3Bb1	Cry3Bb1	AAA22334	1JI6	No		2001	10.1107/s0907444901008186
+Cry4Aa1	Cry4Aa1	CAA68485	2C9K	No		2006	10.1128/JB.188.9.3391-3401.2006
+Cry4Ba1	Cry4Ba1	CAA30312	4MOA	Yes	R203Q mutant	2014	10.1074/jbc.M114.627554
+Cry4Ba1	Cry4Ba1	CAA30312	1W99	No		2005	10.1016/j.jmb.2005.02.013
+Cry5Ba1	Cry5Ba1	AAA68598	4D8M	No		2012	10.1021/bi301386q
+Cry5Ba2	None	ABW88931	8HHE	No	Activated protein	2022	10.3390/toxins14120823
+Cry7Ca1	Cry7Ca1	ABR67863	5ZI1	Yes		2018	10.1002/pro.3561
+Cry8Ba2	Cry8Ba2	MZ355710	9H9B	No	Compressed form, full length protoxin structure of natural crystals by XFEL	2026	10.1016/j.str.2026.01.014
+Cry8Ba2	Cry8Ba2	MZ355710	9H9A	No	Extended form, full length protoxin structure of natural crystals by XFEL	2026	10.1016/j.str.2026.01.014
+Cry8Ea1	Cry8Ea1	AY329081	3EB7	No		2008	10.1016/j.jsb.2009.07.004

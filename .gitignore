@@ -1,0 +1,8 @@
+raw/
+work/
+scripts/asr/out/
+__pycache__/
+*.pyc
+site/base/
+site/index.html.pre_*
+tools/
