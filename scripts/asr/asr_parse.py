@@ -47,25 +47,28 @@ def run_grasp(root, aln, outdir, model='LG', threads=4, rates=None, mem='8g', ti
     """GRASP on the alignment; chunks > 1 splits the columns into blocks that are run one after the other on the same tree and joined by node label (position-specific indel methods such as PSP
     and the column-wise character inference treat the columns independently; needed for trees of several thousand columns, where the character inference of GRASP does not fit in 8 GB)"""
     os.makedirs(outdir, exist_ok=True)
-    if chunks > 1:
-        W = len(next(iter(aln.values()))); size = -(-W // chunks); merged = {}; res = None
+    if chunks > 1:                                                           # Cry Atlas change: INTERLEAVED blocks (columns c, c + chunks, c + 2 chunks ...) instead of contiguous ones: a contiguous block can lie in a region that a whole clade lacks
+        W = len(next(iter(aln.values()))); blocks = []; res = None            # (the protoxin half of Cry2 / Cry3 ...), and GRASP then finds no path for the ancestors of that clade; valid for column-independent indel methods (PSP)
         for c in range(chunks):
-            lo, hi = c * size, min(W, (c + 1) * size)
-            if lo >= hi: break
-            sub = {k: v[lo:hi] for k, v in aln.items()}
-            res = run_grasp(root, sub, os.path.join(outdir, 'chunk_%d' % c), model=model, threads=threads, rates=(rates[lo:hi] if rates else None), mem=mem, timeout=timeout, indel=indel, chunks=1)
+            sub = {k: v[c::chunks] for k, v in aln.items()}
+            if not len(next(iter(sub.values()))): break
+            res = run_grasp(root, sub, os.path.join(outdir, 'chunk_%d' % c), model=model, threads=threads, rates=(rates[c::chunks] if rates else None), mem=mem, timeout=timeout, indel=indel, chunks=1)
             fp = os.path.join(outdir, 'chunk_%d' % c, 'out', 'aln_ancestors.fa')
             if not os.path.exists(fp): return res
-            cur = None
+            seqs = {}; cur = None
             for ln in open(fp):
                 ln = ln.rstrip()
-                if ln.startswith('>'): cur = ln[1:].strip(); merged.setdefault(cur, [])
-                elif cur is not None: merged[cur].append(ln)
+                if ln.startswith('>'): cur = ln[1:].strip(); seqs.setdefault(cur, [])
+                elif cur is not None: seqs[cur].append(ln)
+            blocks.append({k: ''.join(v) for k, v in seqs.items()})
             if c == 0: nwk0 = open(os.path.join(outdir, 'chunk_0', 'out', 'aln_ancestors.nwk')).read()
             else: assert open(os.path.join(outdir, 'chunk_%d' % c, 'out', 'aln_ancestors.nwk')).read() == nwk0, 'node labels differ between blocks'
         os.makedirs(os.path.join(outdir, 'out'), exist_ok=True)
         with open(os.path.join(outdir, 'out', 'aln_ancestors.fa'), 'w') as f:
-            for k, v in merged.items(): f.write('>%s\n%s\n' % (k, ''.join(v)))
+            for k in blocks[0]:
+                parts = [b[k] for b in blocks]
+                assert all(len(parts[i]) == len(range(i, W, chunks)) for i in range(len(parts))), 'block length differs for ' + k
+                f.write('>' + k + chr(10) + ''.join(parts[j % chunks][j // chunks] for j in range(W)) + chr(10))
         open(os.path.join(outdir, 'out', 'aln_ancestors.nwk'), 'w').write(nwk0)
         return res
     with open(os.path.join(outdir, 'aln.fa'), 'w') as f:
