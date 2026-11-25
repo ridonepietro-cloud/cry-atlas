@@ -112,12 +112,25 @@ def atlas_inputs(pack, key):
     a = json.load(open(os.path.join(D, fr['file']), encoding='utf-8')); seqs = a['seqs']; sp = a.get('split', fr['split']); en = fr.get('split2') or fr['width']
     cut = (lambda s: s[:sp]) if sub == 'A' else (lambda s: s[sp:en]) if sub == 'B' else (lambda s: s[:en])
     t = parse_newick(trees['trees'][key]['newick']); ids = [l.name for l in leaves(t)]
-    part = {i: cut(seqs[i]) for i in ids}
+    modcols = None
+    if sub not in ('A', 'B', 'AB'):                                              # Cry Atlas: a domain tree (DI, DII, DIII) = the columns of that module (the module code of every residue, residues.json) of the frame
+        import base64
+        mname = meta['module_ids']; res = json.load(open(os.path.join(D, 'residues.json'), encoding='utf-8')); cs = set()
+        for rid, g in seqs.items():
+            mb = base64.b64decode(res[rid]['A']['mod']); k = 0
+            for c, ch in enumerate(g):
+                if ch != '-':
+                    if mname.get(str(mb[k])) == sub: cs.add(c)
+                    k += 1
+        modcols = sorted(cs); part = {i: ''.join(seqs[i][c] for c in modcols) for i in ids}
+    else:
+        part = {i: cut(seqs[i]) for i in ids}
     W = len(next(iter(part.values()))); need = max(1, float(os.environ.get('ASR_MIN_OCC', '0')) * len(ids))        # ASR_MIN_OCC (FliC pack, 2026-11-04: 0.2) = the occupancy of the columns of its trees; default 0 = every column with a residue
     keep = [c for c in range(W) if sum(1 for i in ids if part[i][c] != '-') >= need]
     off = 0 if sub in ('A', 'AB') else sp
     ok = set(AA + '-')                                                           # residues outside the 20 amino acids (X, B, Z, U ...) count as missing, as codeml does; GRASP refuses them
-    return t, {i: ''.join(part[i][c] if part[i][c] in ok else '-' for c in keep) for i in ids}, [c + off for c in keep], rows, meta, trees['trees'][key]
+    cols_out = [modcols[c] for c in keep] if modcols is not None else [c + off for c in keep]
+    return t, {i: ''.join(part[i][c] if part[i][c] in ok else '-' for c in keep) for i in ids}, cols_out, rows, meta, trees['trees'][key]
 
 # ------------------------------------------------------------------ PAML codeml
 PAML_DAT_NAME = {'LG': 'lg', 'WAG': 'wag', 'JTT': 'jones', 'DAYHOFF': 'dayhoff', 'JONES': 'jones'}

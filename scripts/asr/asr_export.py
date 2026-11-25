@@ -43,8 +43,10 @@ def main():
     pack = sys.argv[1]; keys = sys.argv[2:] or list(json.load(open(os.path.join(L.ATLAS, 'site', 'data', pack, 'trees.json'), encoding='utf-8'))['trees'])
     ip = os.path.join(L.ATLAS, 'site', 'data', pack, 'asr_index.json'); idx = json.load(open(ip)) if os.path.exists(ip) else {'pack': pack, 'sets': {}}
     for k in keys:
-        try: idx['sets'][k] = export_key(pack, k, indel); print(pack, k, idx['sets'][k], flush=True)
+        try:
+            ent = export_key(pack, k, indel); print(pack, k, ent, flush=True)
+            cur = json.load(open(ip)) if os.path.exists(ip) else {'pack': pack, 'sets': {}}                 # Cry Atlas: several exports run at once -> merge into the file as it is NOW
+            cur['sets'][k] = ent; json.dump(cur, open(ip, 'w'), indent=0)
         except Exception as e: print(pack, k, 'FAILED', str(e)[:300], flush=True)
-        json.dump(idx, open(ip, 'w'), indent=0)
 if __name__ == '__main__':
     main()

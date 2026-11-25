@@ -48,8 +48,12 @@ rep('function lkEntryHTML(r) {', 'function lkEntryHTML(r) {\n  if (SYS === "cry"
 # ---- tanglegram: the right-hand tree follows the alignment frame on screen (struct_DIII <-> seq_DIII); the colour option is not about stators
 rep('t.left = S.trees.trees[f + "_A"] ? f + "_A" : td0[0]; var alt = td0[1];', 't.left = S.trees.trees[f + "_A"] ? f + "_A" : td0[0]; var alt = td0[1] && (S.trees.trees[f + td0[1].slice(td0[1].indexOf("_"))] ? f + td0[1].slice(td0[1].indexOf("_")) : td0[1]);')
 rep('>by stator class</option>', '>by family class</option>')
+# ---- species-tree window for the Cry tab (data/species_tree.json of the Cry Atlas, 21_species_tree.py): button text, one more ring colour (8 classes)
+rep_re(r'id="stBtn" aria-pressed="false" title="[^"]*"', 'id="stBtn" aria-pressed="false" title="GTDB species tree of the species that BPPRC / NCBI name as source of the Cry entries, with one ring per Cry class; a click on a box lists the entries of that species and class and opens their structures"')
+rep('var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d"];', 'var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d", "#7a5c00"];')
+rep(' entries not placed (eukaryotes, names GTDB does not use)</span>', ' entries not placed (no organism in the record, unknown or synthetic source, expression host, names GTDB does not use)</span>')
 css = ("html[data-sys=\"cry\"] #fpToggle, html[data-sys=\"cry\"] #fpPanel, html[data-sys=\"cry\"] [data-c=\"hyd\"], html[data-sys=\"cry\"] [data-c=\"hydw\"], html[data-sys=\"cry\"] [data-c=\"hydx\"], "
-       "html[data-sys=\"cry\"] #stBtn, html[data-sys=\"cry\"] [data-scope=\"inter\"], html[data-sys=\"cry\"] [data-layer=\"plug\"], html[data-sys=\"cry\"] #plugFilter { display: none !important; }\n")
+       "html[data-sys=\"cry\"] [data-scope=\"inter\"], html[data-sys=\"cry\"] [data-layer=\"plug\"], html[data-sys=\"cry\"] #plugFilter { display: none !important; }\n")
 rep("</style>\n\n<div id=\"app\">", css + "</style>\n\n<div id=\"app\">")
 open(OUT, "w", encoding="utf-8", newline="").write(t)
 print("written", OUT, len(t), "bytes")

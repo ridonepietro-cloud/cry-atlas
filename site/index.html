@@ -582,7 +582,7 @@ html[data-main="trees"] #msaPanel { height: max(640px, calc(100vh - 100px)); }
 .domcard td { padding: 2px 6px 2px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
 .domcard td.num, .domcard th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .domcard .dc-sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
-html[data-sys="cry"] #fpToggle, html[data-sys="cry"] #fpPanel, html[data-sys="cry"] [data-c="hyd"], html[data-sys="cry"] [data-c="hydw"], html[data-sys="cry"] [data-c="hydx"], html[data-sys="cry"] #stBtn, html[data-sys="cry"] [data-scope="inter"], html[data-sys="cry"] [data-layer="plug"], html[data-sys="cry"] #plugFilter { display: none !important; }
+html[data-sys="cry"] #fpToggle, html[data-sys="cry"] #fpPanel, html[data-sys="cry"] [data-c="hyd"], html[data-sys="cry"] [data-c="hydw"], html[data-sys="cry"] [data-c="hydx"], html[data-sys="cry"] [data-scope="inter"], html[data-sys="cry"] [data-layer="plug"], html[data-sys="cry"] #plugFilter { display: none !important; }
 </style>
 
 <div id="app">
@@ -591,7 +591,7 @@ html[data-sys="cry"] #fpToggle, html[data-sys="cry"] #fpPanel, html[data-sys="cr
     <nav class="tabs" role="tablist" aria-label="System" id="sysTabs">
       <button role="tab" aria-selected="true" data-sys="cry" title="Cry toxins: every sequence of the Cry class of bpprc-db.org with its structure models, domains, contacts, trees and genome maps">Cry toxins</button>
     </nav>
-    <button class="chip" id="stBtn" aria-pressed="false" title="GTDB species tree of the species of all tabs, with rings of the numbers of FIT and GIT A and B subunit homologs, of the MscL and MscS entries and of the FliC flagellins; a click on a box lists what it counts and opens the structures">Species tree</button>
+    <button class="chip" id="stBtn" aria-pressed="false" title="GTDB species tree of the species that BPPRC / NCBI name as source of the Cry entries, with one ring per Cry class; a click on a box lists the entries of that species and class and opens their structures">Species tree</button>
     <span class="stamp" id="stamp"></span>
   </header>
   <div class="wsrow pad">
@@ -4375,7 +4375,7 @@ function anOnPick(ids, key) {                                    // a clade was 
 var ST = { open: false, data: null, load: null, big: false, pos: null, sel: null, view: null, lay: null, labels: true, guides: true, drag: null, rowSp: null, bh: 0.44, recs: [], ri: -1,
   rowsCache: {}, bunCache: {}, v3: null, ent: null, vmode: "cx", vcol: "sub", vtok: 0 };
 function stSave() { store("st", { big: ST.big, pos: ST.pos, labels: ST.labels, guides: ST.guides, bh: ST.bh, vmode: ST.vmode, vcol: ST.vcol }); }
-var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d"];
+var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d", "#7a5c00"];
 var ST_PHY = { Pseudomonadota: "#1f77b4", Bacteroidota: "#aec7e8", Bacillota: "#ff7f0e", Desulfobacterota: "#ffbb78", Campylobacterota: "#2ca02c", Verrucomicrobiota: "#98df8a", Planctomycetota: "#d62728", Spirochaetota: "#ff9896",
   Nitrospirota: "#9467bd", Acidobacteriota: "#c5b0d5", Cyanobacteriota: "#8c564b", Chrysiogenota: "#c49c94", Myxococcota: "#e377c2", Actinomycetota: "#bcbd22", Aquificota: "#17becf", Thermotogota: "#7f7f7f", Chloroflexota: "#dbdb8d", Deinococcota: "#9edae5", Fusobacteriota: "#c7c7c7", Chlamydiota: "#f7b6d2" };
 function stPhylum(lin) { var m = /;p__([^;_]+)/.exec(lin || ""); return m ? m[1] : "other"; }
@@ -4458,7 +4458,7 @@ function stArchaea() {
   var d = ST.data, ar = Object.keys(d.species).filter(function (k) { return d.species[k].dom === "Archaea"; }), el = $("stArch"); if (!el) return;
   if (!ar.length && !d.unplaced.length) { el.hidden = true; return; } el.hidden = false;
   el.innerHTML = (ar.length ? "<b>Archaea</b> " : "") + ar.map(function (k) { return "<span class='st-archsp'>" + esc(k) + " " + d.species[k].n.map(function (c, i) { return c ? '<button class="chip st-archc" data-sp="' + esc(k) + '" data-k="' + i + '" style="border-color:' + ST_RING_COL[i] + '">' + esc(d.rings[i]) + " " + c + "</button>" : ""; }).join("") + "</span>"; }).join("") +
-    (d.unplaced.length ? " <span class='muted' title='" + esc(d.unplaced.map(function (u) { return u.org + " (" + u.pack + " " + u.id + ")"; }).slice(0, 60).join("; ")) + "'>· " + d.unplaced.length + " entries not placed (eukaryotes, names GTDB does not use)</span>" : "");
+    (d.unplaced.length ? " <span class='muted' title='" + esc(d.unplaced.map(function (u) { return u.org + " (" + u.pack + " " + u.id + ")"; }).slice(0, 60).join("; ")) + "'>· " + d.unplaced.length + " entries not placed (no organism in the record, unknown or synthetic source, expression host, names GTDB does not use)</span>" : "");
 }
 function stBindSvg() {
   var svg = $("stSvg"); if (!svg) return;

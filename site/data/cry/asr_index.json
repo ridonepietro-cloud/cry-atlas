@@ -20,6 +20,66 @@
 "bytes": 2671789,
 "tree_model": "LG+G4",
 "indel": "PSP, columns in 4 blocks"
+},
+"seq_DIII": {
+"key": "seq_DIII",
+"file": "asr_seq_DIII.json",
+"nodes": 668,
+"leaves": 669,
+"columns": 182,
+"bytes": 497038,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
+},
+"seq_DI": {
+"key": "seq_DI",
+"file": "asr_seq_DI.json",
+"nodes": 666,
+"leaves": 667,
+"columns": 215,
+"bytes": 562064,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
+},
+"struct_DIII": {
+"key": "struct_DIII",
+"file": "asr_struct_DIII.json",
+"nodes": 668,
+"leaves": 669,
+"columns": 198,
+"bytes": 530254,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
+},
+"struct_DI": {
+"key": "struct_DI",
+"file": "asr_struct_DI.json",
+"nodes": 666,
+"leaves": 667,
+"columns": 267,
+"bytes": 668265,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
+},
+"struct_DII": {
+"key": "struct_DII",
+"file": "asr_struct_DII.json",
+"nodes": 668,
+"leaves": 669,
+"columns": 309,
+"bytes": 758123,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
+},
+"seq_DII": {
+"key": "seq_DII",
+"file": "asr_seq_DII.json",
+"nodes": 668,
+"leaves": 669,
+"columns": 327,
+"bytes": 785866,
+"tree_model": "LG+G4",
+"indel": "PSP, columns in 2 blocks"
 }
 }
 }
