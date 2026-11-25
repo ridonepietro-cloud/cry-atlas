@@ -30,4 +30,6 @@ Raw downloads (AlphaFold DB and PDB files, RING edge files, PAML / GRASP run fol
 * Tools: MAFFT, FoldMason, IQ-TREE, PAML (codeml), GRASP, RING 4.0 (academic licence; only the contact tables derived from it are in this repository), 3Dmol.js.
 * Alignments, trees, contacts and annotations here are computed from those sources and may contain errors; sequence differences between BPPRC and NCBI are listed in the row notes.
 
-Code in `scripts/` and `site/index.html` has no licence file yet; ask before reusing it.
+## Licence
+The code in `scripts/` and the page `site/index.html` are released under the [MIT License](LICENSE). The licence covers the code only: the BPPRC-derived tables and annotations,
+the AlphaFold DB, PDB, UniProt and NCBI data in `data/` and `site/data/`, and the tools listed above keep the terms of their own sources (see the section above).
