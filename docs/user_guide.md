@@ -32,7 +32,7 @@ Everything below acts on the entries currently *visible*. Combine the filters fr
 ## 4. Trees
 
 * **View → Trees**. Choose the tree on screen: full toxin or Domain I / II / III, each on the structure or the sequence frame. Click a node to pick that clade (alt-click removes). **↓ Newick** exports the tree on screen, **Pop out** detaches it.
-* **Tree window** (next to Alignment) draws the tree beside the alignment rows.
+* **Tree window** (next to Alignment) draws the ML tree of the frame on screen beside the alignment rows. With *Order = ML tree* tips and rows are level. With any other order, e.g. *Name*, the tree keeps its own order and a line (coloured by family) joins each tip to its row, so the crossings show how far the names (or any other order) follow the tree; hover a clade or a row to highlight its lines, click a node to pick the clade. **Rows by tree** (in the window) puts the rows back in tree order.
 * **Tanglegram of two trees**: Left / Right trees of your choice (default Domain II against Domain III). **by family class** colours the lines by family; **by discordance** highlights the entries whose position differs between the two trees, which is the domain-swap view.
 
 ## 5. Other windows

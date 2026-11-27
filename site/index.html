@@ -609,7 +609,7 @@ html[data-sys="cry"] #fpToggle, html[data-sys="cry"] #fpPanel, html[data-sys="cr
   <section class="tools pad" aria-label="View controls">
     <div class="trow">
       <div class="grp" id="mainGrp" hidden><span class="lbl">View</span><div class="seg" id="mainSeg" role="group" aria-label="Main view"><button data-main="msa" aria-pressed="true">Alignment</button><button data-main="trees" aria-pressed="false" title="Maximum-likelihood trees of MotA, MotB and the concatenation, and the A-versus-B tanglegram">Trees</button></div>
-        <button class="chip" id="treeWinBtn" aria-pressed="false" title="Draw the tree of the entries in the alignment beside the rows (rows take the order of the tree)">Tree window</button></div>
+        <button class="chip" id="treeWinBtn" aria-pressed="false" title="Draw the tree of the entries in the alignment beside the rows (rows take the order of the tree; with Order = Name the tree keeps its own order and a line joins each tip to its row)">Tree window</button></div>
       <div class="grp"><span class="lbl">Alignment</span>
         <div class="seg" id="frameSeg" role="group" aria-label="Alignment frame"><button data-frame="struct" aria-pressed="true">Structure</button><button data-frame="seq" aria-pressed="false">Sequence</button><button data-frame="prev" aria-pressed="false" hidden>Earlier Core</button><button data-frame="linsi" aria-pressed="false" hidden>MAFFT merge</button><button data-frame="fold" aria-pressed="false" hidden>Structure alignment</button></div><span class="dlsplit"><button class="btn" id="dlFa" title="Download the alignment on show (entries and columns on show, rows in the order shown) as a FASTA file (saved as .fasta.txt: the download feature accepts only a few extensions; rename it to .fasta if you like)">↓ FASTA</button><button class="btn" id="dlFaMenu" aria-haspopup="menu" aria-expanded="false" aria-label="More FASTA choices" title="One subunit only, sequences without gaps, ticked entries only">▾</button></span></div>
       <div class="grp"><label class="lbl" for="orderSel">Order</label>
@@ -649,7 +649,7 @@ html[data-sys="cry"] #fpToggle, html[data-sys="cry"] #fpPanel, html[data-sys="cr
           <canvas id="treeCv" aria-label="Phylogenetic tree of the entries in the alignment, drawn level with the rows"></canvas>
           <div class="td-ctl"><span class="lbl">Tree</span>
             <select id="tdSet" aria-label="Tree to show"><option value="AB">MotA + MotB</option><option value="A">MotA</option><option value="B">MotB</option></select>
-            <span class="lbl" id="tdColLbl" hidden>Tips</span><select id="tdCol" aria-label="Tip colour" hidden><option value="class">class</option><option value="plug">plug call</option></select>
+            <button class="chip" id="tdRowsBy" hidden style="font-size:11px;padding:0 8px" title="Put the rows in the order of this tree (the lines become horizontal)">Rows by tree</button><span class="lbl" id="tdColLbl" hidden>Tips</span><select id="tdCol" aria-label="Tip colour" hidden><option value="class">class</option><option value="plug">plug call</option></select>
             <button class="x x2" id="tdNwk" aria-haspopup="menu" aria-expanded="false" aria-label="Download the tree as Newick" title="Download the tree on show as a Newick file">↓</button><button class="x" id="tdClose" aria-label="Close the tree window" title="Close">✕</button>
             <div class="seg" id="tdLens" role="group" aria-label="Branch lengths"><button data-l="phylo" aria-pressed="true" title="Branch lengths proportional to substitutions per site">Phylogram</button><button data-l="clado" aria-pressed="false" title="Topology only">Cladogram</button></div></div>
           <div id="treeGrip" role="separator" aria-orientation="vertical" aria-label="Resize the tree window" tabindex="0"></div>
@@ -4847,6 +4847,22 @@ function drawTangle(host) {
 
 /* ---------------------------------------------------------------- tree window: the ML tree of the entries in the alignment, drawn level with the rows (the rows are in the order of this tree) */
 var TD = { on: false, set: "AB", lens: "phylo", col: "class", w: 250, root: {}, built: null, hover: null, geo: [], noteBtn: null, cv: null };
+/* linked tree window (patch_cry_linked_tree.py) */
+function tdLinked() { return S.order !== "ml:" + TD.set; }            // rows are not in the order of the tree: tips are joined to their rows by lines
+function tdKeepOrder() { return S.order === "name" || S.order.indexOf("cu:") === 0; }   // orders the tree window must not replace when it opens
+function tdLinks(ctx, B, V, x0, x1, rh, st, h, hr, hov) {            // one line per tip: (x0, tip position) -> (x1, row position); bold for picked, current and hovered entries
+  var groups = {}, bold = [], vTop = TOP - 2, vBot = h - BOT + 2;
+  B.leaves.forEach(function (l) {
+    var ty = TOP + (l.y + 0.5) * rh - st, ry = TOP + (l.ri + 0.5) * rh - st;
+    if ((ty < vTop && ry < vTop) || (ty > vBot && ry > vBot)) return;
+    var r = V.rows[l.ri], cur = S.cur && S.cur.id === r.id, pk = S.picked.has(r.id), hot = hr === l.ri || (hov && l.y >= hov.lo && l.y <= hov.hi);
+    if (cur || pk || hot) bold.push({ ty: ty, ry: ry, cur: cur, hot: hot }); else { var c = tdTipColor(r); (groups[c] = groups[c] || []).push(ty, ry); }
+  });
+  ctx.lineWidth = 1; ctx.globalAlpha = rh >= 6 ? 0.6 : 0.4;
+  Object.keys(groups).forEach(function (c) { ctx.strokeStyle = c; ctx.beginPath(); var a = groups[c]; for (var i = 0; i < a.length; i += 2) { ctx.moveTo(x0, a[i]); ctx.lineTo(x1, a[i + 1]); } ctx.stroke(); });
+  ctx.globalAlpha = 1;
+  bold.forEach(function (e) { ctx.strokeStyle = e.cur || e.hot ? T.accent : T["cv-ink"]; ctx.lineWidth = e.cur ? 2.2 : 1.7; ctx.beginPath(); ctx.moveTo(x0, e.ty); ctx.lineTo(x1, e.ry); ctx.stroke(); });
+}
 function tdKey() { return S.frame + "_" + TD.set; }
 function tdSave() { store("td", { on: TD.on, set: TD.set, lens: TD.lens, col: TD.col, w: TD.w }); }
 function tdFull() {                                           // midpoint-rooted, ladderized: the same tree the ML row order comes from
@@ -4866,7 +4882,7 @@ function tdBuild() {
   var root = full ? tdPrune(full, keep) : null, out = { view: V, key: tdKey(), lens: TD.lens, root: root, leaves: [], maxD: 1, missing: 0 };
   if (!root) return out;
   root.len = 0;
-  (function y(o) { if (!o.kids.length) { o.y = V.rowIdx[o.name]; out.leaves.push(o); return; } o.kids.forEach(y); o.y = (o.kids[0].y + o.kids[o.kids.length - 1].y) / 2; })(root);
+  out.link = tdLinked(); out.byRow = []; (function y(o) { if (!o.kids.length) { o.ri = V.rowIdx[o.name]; o.y = out.link ? out.leaves.length : o.ri; out.byRow[o.ri] = o; out.leaves.push(o); return; } o.kids.forEach(y); o.y = (o.kids[0].y + o.kids[o.kids.length - 1].y) / 2; })(root);
   var maxD = 0;
   if (TD.lens === "phylo") (function xs(o, d) { o.d = d; if (!o.kids.length && d > maxD) maxD = d; o.kids.forEach(function (k) { xs(k, d + Math.max(0, k.len)); }); })(root, 0);
   else { (function hh(o) { o.h = o.kids.length ? 1 + Math.max.apply(null, o.kids.map(hh)) : 0; return o.h; })(root); maxD = root.h; (function xs(o) { o.d = maxD - o.h; o.kids.forEach(xs); })(root); }
@@ -4891,19 +4907,20 @@ function drawTreeDock() {
   var ctx = cv.getContext("2d"), V = S.view, rh = S.rh, st = scroller.scrollTop;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.fillStyle = T["cv-bg"]; ctx.fillRect(0, 0, w, h); TD.geo = []; TD.noteBtn = null;
   if (!tdFull()) { tdNote(ctx, w, ["No tree for this alignment."]); return; }
-  if (S.order !== "ml:" + TD.set) { tdNote(ctx, w, ["The rows are not in the order", "of this tree."], "Order rows by this tree"); return; }
-  if (!TD.built || TD.built.view !== V || TD.built.key !== tdKey() || TD.built.lens !== TD.lens) TD.built = tdBuild();
+  var rb0 = $("tdRowsBy"); if (rb0) rb0.hidden = !tdLinked();                  // button of the control bar: only while the rows are in another order
+  if (!TD.built || TD.built.view !== V || TD.built.key !== tdKey() || TD.built.lens !== TD.lens || TD.built.link !== tdLinked()) TD.built = tdBuild();
   var B = TD.built; if (!B.root) { tdNote(ctx, w, ["No entry on show is in the tree."]); return; }
-  var padL = 8, padR = 10, treeW = Math.max(40, w - padL - padR - 8), X = function (o) { return padL + o.d / B.maxD * treeW; }, Y = function (o) { return TOP + (o.y + 0.5) * rh - st; };
+  var padL = 8, padR = 10, treeW = Math.max(40, (w - padL - padR - 8) * (B.link ? 0.58 : 1)), X = function (o) { return padL + o.d / B.maxD * treeW; }, Y = function (o) { return TOP + (o.y + 0.5) * rh - st; };
+  var x0 = padL + treeW + 8, bx = B.link ? x0 - 2 : 0; TD.linkX = B.link ? x0 : null;
   var r0 = Math.max(0, Math.floor(st / rh)), r1 = Math.min(V.nr - 1, Math.floor((st + h - TOP - BOT) / rh)), hov = TD.hover, hr = S.rowHot != null ? S.rowHot : null;
   ctx.save(); ctx.beginPath(); ctx.rect(0, TOP, w, h - TOP - BOT); ctx.clip();
   for (var ri = r0; ri <= r1; ri++) {                         // row bands: picked, current, hovered
     var rr = V.rows[ri], y0 = rowY(ri);
-    if (S.picked.has(rr.id)) { ctx.fillStyle = T["cv-pick"]; ctx.fillRect(0, y0, w, rh); }
-    if (S.cur && S.cur.id === rr.id) { ctx.fillStyle = T["cv-hl"]; ctx.fillRect(0, y0, w, rh); ctx.fillStyle = T.accent; ctx.fillRect(w - 3, y0, 3, rh); }
+    if (S.picked.has(rr.id)) { ctx.fillStyle = T["cv-pick"]; ctx.fillRect(bx, y0, w - bx, rh); }
+    if (S.cur && S.cur.id === rr.id) { ctx.fillStyle = T["cv-hl"]; ctx.fillRect(bx, y0, w - bx, rh); ctx.fillStyle = T.accent; ctx.fillRect(w - 3, y0, 3, rh); }
   }
-  if (hov) { ctx.fillStyle = T["cv-hl"]; ctx.fillRect(0, rowY(hov.lo), w, (hov.hi - hov.lo + 1) * rh); }
-  if (hr != null) { ctx.fillStyle = T["cv-hl"]; ctx.fillRect(0, rowY(hr), w, rh); }
+  if (hov) { ctx.fillStyle = T["cv-hl"]; if (B.link) { ctx.fillRect(0, rowY(hov.lo), x0 - 2, (hov.hi - hov.lo + 1) * rh); B.leaves.forEach(function (l) { if (l.y >= hov.lo && l.y <= hov.hi) ctx.fillRect(bx, rowY(l.ri), w - bx, rh); }); } else ctx.fillRect(0, rowY(hov.lo), w, (hov.hi - hov.lo + 1) * rh); }
+  if (hr != null) { ctx.fillStyle = T["cv-hl"]; if (B.link) { ctx.fillRect(bx, rowY(hr), w - bx, rh); if (B.byRow[hr]) ctx.fillRect(0, rowY(B.byRow[hr].y), x0 - 2, rh); } else ctx.fillRect(0, rowY(hr), w, rh); }
   (function go(o, hot) {
     if (!o.kids.length) return;
     var x = X(o), ys = o.kids.map(Y), hh = hot || o === hov;
@@ -4912,11 +4929,12 @@ function drawTreeDock() {
     TD.geo.push({ o: o, x: x, y: TOP + (o.y + 0.5) * rh });
     o.kids.forEach(function (k) { if (k.kids.length && k.sup != null && k.sup >= 95) { ctx.fillStyle = T["cv-ink"]; ctx.beginPath(); ctx.arc(X(k), Y(k), 2.1, 0, 6.2832); ctx.fill(); } go(k, hh); });
   })(B.root, false);
+  if (B.link) tdLinks(ctx, B, V, x0, w - 3, rh, st, h, hr, hov);
   B.leaves.forEach(function (l) {
     if (l.y < r0 - 1 || l.y > r1 + 1) return;
-    var r = V.rows[l.y], x = X(l), y = Y(l), cur = S.cur && S.cur.id === r.id, pk = S.picked.has(r.id);
-    if (rh >= 8 && x < w - padR - 2) { ctx.strokeStyle = T["cv-grid"]; ctx.lineWidth = 1; ctx.setLineDash([2, 3]); ctx.beginPath(); ctx.moveTo(x + 3, y); ctx.lineTo(w - padR + 2, y); ctx.stroke(); ctx.setLineDash([]); }
-    ctx.fillStyle = tdTipColor(r); ctx.beginPath(); ctx.arc(x, y, Math.min(pk || S.rowHot === l.y ? 4 : 3.4, Math.max(0.7, rh * 0.45)), 0, 6.2832); ctx.fill();
+    var r = V.rows[l.ri], x = X(l), y = Y(l), cur = S.cur && S.cur.id === r.id, pk = S.picked.has(r.id);
+    if (rh >= 8 && x < w - padR - 2) { ctx.strokeStyle = T["cv-grid"]; ctx.lineWidth = 1; ctx.setLineDash([2, 3]); ctx.beginPath(); ctx.moveTo(x + 3, y); ctx.lineTo(B.link ? x0 - 2 : w - padR + 2, y); ctx.stroke(); ctx.setLineDash([]); }
+    ctx.fillStyle = tdTipColor(r); ctx.beginPath(); ctx.arc(x, y, Math.min(pk || S.rowHot === l.ri ? 4 : 3.4, Math.max(0.7, rh * 0.45)), 0, 6.2832); ctx.fill();
     if (cur || pk) { ctx.strokeStyle = cur ? T.accent : T["cv-ink"]; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.arc(x, y, Math.min(4.6, Math.max(2, rh * 0.7)), 0, 6.2832); ctx.stroke(); }
   });
   ctx.restore();
@@ -4935,7 +4953,7 @@ function tdPointer(ev) {                                       // -> {node} | {r
   if (!V || y < TOP || y > rc.height - BOT) return null;
   var best = null, bd = 1e9; TD.geo.forEach(function (g) { var dx = Math.abs(x - g.x), dy = Math.abs(y - (g.y - st)); if (dx <= 6 && dy <= 6 && dx + dy < bd) { bd = dx + dy; best = g.o; } });
   if (best) return { node: best };
-  var ri = Math.floor((y - TOP + st) / S.rh); return ri >= 0 && ri < V.nr ? { ri: ri } : null;
+  var ri = Math.floor((y - TOP + st) / S.rh); if (TD.linkX != null && TD.built && TD.built.link && x < TD.linkX) { var lf = TD.built.leaves[ri]; return lf ? { ri: lf.ri } : null; } return ri >= 0 && ri < V.nr ? { ri: ri } : null;
 }
 function tdClades(o, out) { out = out || []; if (!o.kids.length) out.push(o.name); else o.kids.forEach(function (k) { tdClades(k, out); }); return out; }
 function tdHoverClear() { var had = TD.hover || (S.hover && S.hover.fromTree) || S.rowHot != null; S.rowHot = null; TD.hover = null; if (S.hover && S.hover.fromTree) { S.hover = null; $("msaFoot").innerHTML = HINT; } if (had) schedule(); }
@@ -4947,16 +4965,16 @@ function tdSyncUi() {
 }
 function tdToggle(on) {
   TD.on = !!on; tdSave(); tdSyncUi();
-  if (TD.on && S.order !== "ml:" + TD.set) tdSyncOrder(); else { sizeScroller(); schedule(); }
+  if (TD.on && S.order !== "ml:" + TD.set && !tdKeepOrder()) tdSyncOrder(); else { sizeScroller(); schedule(); }
 }
 function initTreeDock() {
   var sv = store("td"); if (sv) Object.keys(sv).forEach(function (k) { if (k in TD && k !== "root" && k !== "built") TD[k] = sv[k]; });
   if (["A", "B", "AB"].indexOf(TD.set) < 0 || S.meta.homo) TD.set = S.meta.homo ? "A" : "AB"; if (!(TD.w >= 140 && TD.w <= 560)) TD.w = 250;
   TD.cv = $("treeCv");
-  if (TD.on && S.order !== "ml:" + TD.set) { S.order = "ml:" + TD.set; $("orderSel").value = S.order; }     // initTrees runs before the first view is built
+  if (TD.on && S.order !== "ml:" + TD.set && !tdKeepOrder()) { S.order = "ml:" + TD.set; $("orderSel").value = S.order; }     // initTrees runs before the first view is built
   tdSyncUi();
   $("treeWinBtn").addEventListener("click", function () { tdToggle(!TD.on); });
-  $("tdClose").addEventListener("click", function () { tdToggle(false); });
+  $("tdClose").addEventListener("click", function () { tdToggle(false); }); $("tdRowsBy").addEventListener("click", function () { tdSyncOrder(); });
   $("tdSet").addEventListener("change", function (e) { TD.set = e.target.value; tdSave(); TD.built = null; tdSyncOrder(); });
   $("tdCol").addEventListener("change", function (e) { TD.col = e.target.value; tdSave(); schedule(); });
   document.querySelectorAll("#tdLens button").forEach(function (b) { b.addEventListener("click", function () { TD.lens = b.getAttribute("data-l"); tdSave(); tdSyncUi(); schedule(); }); });

@@ -49,6 +49,9 @@ rep('function lkEntryHTML(r) {', 'function lkEntryHTML(r) {\n  if (SYS === "cry"
 rep('t.left = S.trees.trees[f + "_A"] ? f + "_A" : td0[0]; var alt = td0[1];', 'var fr0 = function (k) { var k2 = f + k.slice(k.indexOf("_")); return S.trees.trees[k2] ? k2 : k; }; t.left = td0[0] ? fr0(td0[0]) : f + "_A"; var alt = td0[1] && fr0(td0[1]);')
 rep('h += "<h3>Pivot points inferred from the mechanism</h3>";', 'h += "<h3>" + (SYS === "cry" ? "Marked sites (ligand contacts, nematode signature)" : "Pivot points inferred from the mechanism") + "</h3>";')
 rep('>by stator class</option>', '>by family class</option>')
+# ---- overlay toggle of the marked sites: renamed 'Galactose sites' on user request 2026-11-27 (it still switches both mark sets: GalNAc-site diamonds and nematode-signature stars)
+rep('<button class="chip" data-layer="marks" aria-pressed="true"><i style="background:#e0b400"></i>Pivot stars / site diamonds</button>',
+    '<button class="chip" data-layer="marks" aria-pressed="true" title="Marked sites: diamonds = residues within 4.5 A of the N-acetylgalactosamine in 4ARY (Cry1Ac); stars = columns shared by the nematode toxins"><i style="background:#e0b400"></i>Galactose sites</button>')
 # ---- species-tree window for the Cry tab (data/species_tree.json of the Cry Atlas, 21_species_tree.py): button text, one more ring colour (8 classes)
 rep_re(r'id="stBtn" aria-pressed="false" title="[^"]*"', 'id="stBtn" aria-pressed="false" title="GTDB species tree of the species that BPPRC / NCBI name as source of the Cry entries, with one ring per Cry class; a click on a box lists the entries of that species and class and opens their structures"')
 rep('var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d"];', 'var ST_RING_COL = ["#1b7837", "#7fbf7b", "#b35806", "#f1a340", "#2c7fb8", "#8e63b8", "#c51b7d", "#7a5c00"];')
