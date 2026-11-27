@@ -21,7 +21,7 @@ Everything below acts on the entries currently *visible*. Combine the filters fr
 * **View → Alignment**; **Structure** (FoldMason on AlphaFold models, per module) or **Sequence** (MAFFT L-INS-i, per module). The modules are N-term | Domain I | Domain II | Domain III | C-term (protoxin half).
 * **Order**: *Tree order* (guide tree of the Domain II alignment, the default), *ML tree* (IQ-TREE of the frame on screen) or *Name*.
 * **Colour**: Confidence (pLDDT), Module, Occupancy, Residue type. **Zoom / Rows** sliders, **Fit**, **Fit all**.
-* **Overlays**: *NODE* (columns where the domains touch each other), *Contact dots*, *Pivot stars / site diamonds* (the marked sites, see §5), *Column strip*; **Choose layers** lists them all. The **Partners** chips (H-bond, ionic, π-stack…) filter the contact types.
+* **Overlays**: *NODE* (columns where the domains touch each other), *Contact dots*, *Galactose sites* (the marked sites, see §5), *Column strip*; **Choose layers** lists them all. The **Partners** chips (H-bond, ionic, π-stack…) filter the contact types.
 * **↓ FASTA** downloads the sequences of the visible entries (the arrow next to it opens the format options).
 
 ## 3. Open one entry
@@ -40,13 +40,13 @@ Everything below acts on the entries currently *visible*. Combine the filters fr
 * **Ancestors**: reconstructed ancestors of every node of the 8 trees (Consensus, GRASP, PAML), with posterior probability per site.
 * **Genome map**: tick entries first; shows ±5/10/15 kb around each gene with synteny between the ticked entries.
 * **Species tree** (button at the top, next to *Cry toxins*): GTDB tree of the source species with one ring per Cry class; click a box to list its entries.
-* **Marked sites** (diamonds and stars): diamonds = residues within 4.5 Å of the N-acetylgalactosamine in 4ARY (Cry1Ac); stars = the seven alignment columns that separate the nematode families from insect-active toxins. Tick *Pivot stars / site diamonds* in Overlays.
+* **Marked sites** (diamonds and stars): diamonds = residues within 4.5 Å of the N-acetylgalactosamine in 4ARY (Cry1Ac); stars = the seven alignment columns that separate the nematode families from insect-active toxins. Tick *Galactose sites* in Overlays; this one toggle switches both the diamonds and the stars.
 
 ## 6. Three ready-made routes
 
 1. **Nematode-active vs insect-active.** Colour entries by → *Activity group* → click *Insect-active*, *Other organism only*, *Tested, none active* and *No data* to hide them (19 nematode-active entries remain) → Select… → *All visible* → **Open as subset**. Show *Insect-active* again to compare. Switch *Overlays* to the marked sites to see the stars.
 2. **Domain swaps.** Colour entries by → *Domain trees* → hide *concordant*, *not assessable* and *not in all domain trees*: 11 entries remain whose neighbours in one domain tree disagree with the other two (8 are Domain III in Cry1B/C/E/J; 2 differ in all three). Click a name for the entry card, or open the **Tanglegram** with *by discordance*.
-3. **The galactose site.** Overlays → *Pivot stars / site diamonds*, Structure frame, Colour: Residue type; zoom to Domain III. The eight diamond columns are the 4ARY contact residues, so what every entry carries at those columns is visible row by row (conservation is low: 7-27 % of entries share the Cry1Ac residue).
+3. **The galactose site.** Overlays → *Galactose sites*, Structure frame, Colour: Residue type; zoom to Domain III. The eight diamond columns are the 4ARY contact residues, so what every entry carries at those columns is visible row by row (conservation is low: 7-27 % of entries share the Cry1Ac residue).
 
 ## Limits to keep in mind
 
