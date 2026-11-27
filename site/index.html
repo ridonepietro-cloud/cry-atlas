@@ -1126,7 +1126,7 @@ function buildView() {
   V.splitPos = 0; while (V.splitPos < V.nv && V.cols[V.splitPos] < F.split) V.splitPos++;
   V.splitPos2 = V.splitPos; while (V.splitPos2 < V.nv && V.cols[V.splitPos2] < F.split2) V.splitPos2++;
   var rows = base.filter(passFilter);
-  if (S.order === "name") rows.sort(function (a, b) { return a.label.localeCompare(b.label); });
+  if (S.order === "name") { var nrk = nameRank(); rows.sort(function (a, b) { return nrk ? ((nrk[a.id] == null ? 1e9 : nrk[a.id]) - (nrk[b.id] == null ? 1e9 : nrk[b.id])) || a.label.localeCompare(b.label, "en") : a.label.localeCompare(b.label); }); }
   else { var rk = rankOf(S.order); rows.sort(function (a, b) { return (rk[a.id] == null ? 1e9 : rk[a.id]) - (rk[b.id] == null ? 1e9 : rk[b.id]); }); }
   V.rows = rows; V.nr = rows.length; V.rowIdx = {}; rows.forEach(function (r, i) { V.rowIdx[r.id] = i; });
   V.base = base; V.F = F;
@@ -3018,7 +3018,7 @@ function wire() {
   if (window.ResizeObserver) new ResizeObserver(function () { sizeScroller(); }).observe($("msaWrap"));
   document.querySelectorAll("#viewSeg button").forEach(function (b) { b.addEventListener("click", function () { setViewMode(b.getAttribute("data-view")); }); });
   document.querySelectorAll("#frameSeg button").forEach(function (b) { b.addEventListener("click", function () { setFrame(b.getAttribute("data-frame")); }); });
-  $("orderSel").addEventListener("change", function (e) { S.order = e.target.value; store("order", S.order); rebuild(); });
+  $("orderSel").addEventListener("change", function (e) { S.order = e.target.value; store("order", S.order); tdFollowOrder(); rebuild(); });
   $("colorSel").addEventListener("change", function (e) { snapFade(); S.color = e.target.value; store("color", S.color); buildBitmap(); schedule(); });
   document.querySelectorAll("[data-layer]").forEach(function (b) {
     b.addEventListener("click", function () {
@@ -3983,12 +3983,12 @@ function dlDockTree(withNames) {                                // the tree besi
     var full = tdFull(); if (!full) { toast("No tree for this alignment."); return; }
     var keep = {}; (S.view ? S.view.rows : []).forEach(function (r) { keep[r.id] = true; });
     var root = tdPrune(full, keep); if (!root) { toast("No entry on show is in the tree."); return; }
-    dlSaveTree(root, tdKey() + "_midpoint", withNames);
+    dlSaveTree(root, tdKey() + (TD.set === "N" ? "_name_order" : "_midpoint"), withNames);
   } catch (e) { toast("Could not write the tree: " + (e && e.message || e)); }
 }
 function dlDockMenu(anchor) {
   dlOpen(anchor, [{ label: "Entry ids", title: "Leaf names are the entry ids of the Atlas (e.g. F008)", fn: function () { dlDockTree(false); } }, { label: "Entry ids + names", title: "Leaf names are the entry id followed by the entry name", fn: function () { dlDockTree(true); } }],
-    "Newick of the tree on show: the entries on show, midpoint-rooted; branch lengths in substitutions per site");
+    "Newick of the tree on show: the entries on show, " + (TD.set === "N" ? "rooted as drawn (leaves in name order)" : "midpoint-rooted") + "; branch lengths in substitutions per site");
 }
 
 /* --- Newick of the species tree (GTDB bacterial tree as drawn in the species window) --- */
@@ -4848,7 +4848,7 @@ function drawTangle(host) {
 /* ---------------------------------------------------------------- tree window: the ML tree of the entries in the alignment, drawn level with the rows (the rows are in the order of this tree) */
 var TD = { on: false, set: "AB", lens: "phylo", col: "class", w: 250, root: {}, built: null, hover: null, geo: [], noteBtn: null, cv: null };
 /* linked tree window (patch_cry_linked_tree.py) */
-function tdLinked() { return S.order !== "ml:" + TD.set; }            // rows are not in the order of the tree: tips are joined to their rows by lines
+function tdLinked() { return S.order !== tdWantOrder(); }            // rows are not in the order of the tree: tips are joined to their rows by lines
 function tdKeepOrder() { return S.order === "name" || S.order.indexOf("cu:") === 0; }   // orders the tree window must not replace when it opens
 function tdLinks(ctx, B, V, x0, x1, rh, st, h, hr, hov) {            // one line per tip: (x0, tip position) -> (x1, row position); bold for picked, current and hovered entries
   var groups = {}, bold = [], vTop = TOP - 2, vBot = h - BOT + 2;
@@ -4863,9 +4863,35 @@ function tdLinks(ctx, B, V, x0, x1, rh, st, h, hr, hov) {            // one line
   ctx.globalAlpha = 1;
   bold.forEach(function (e) { ctx.strokeStyle = e.cur || e.hot ? T.accent : T["cv-ink"]; ctx.lineWidth = e.cur ? 2.2 : 1.7; ctx.beginPath(); ctx.moveTo(x0, e.ty); ctx.lineTo(x1, e.ry); ctx.stroke(); });
 }
+/* name-order tree (patch_cry_name_tree.py) */
+function nameRank() {                                          // rank of every entry in the Name order stored with the trees (null: not stored)
+  var no = S.trees && S.trees.name_order && S.trees.name_order.order; if (!no) return null;
+  if (S._nameRankSrc !== no) { var m = {}; no.forEach(function (id, i) { m[id] = i; }); S._nameRank = m; S._nameRankSrc = no; }
+  return S._nameRank;
+}
+function nameParse(str) {                                      // rooted Newick -> {name, len, sup, kids}, child order kept (the leaf order IS the Name order)
+  var i = 0;
+  function token() { var s = i; while (i < str.length && ",():;".indexOf(str[i]) < 0) i++; return str.slice(s, i); }
+  function sub() {
+    var o = { name: "", len: 0, sup: null, kids: [] };
+    if (str[i] === "(") { i++; for (;;) { o.kids.push(sub()); if (str[i] === ",") { i++; continue; } if (str[i] === ")") { i++; break; } throw new Error("Newick: unexpected character at " + i); } token(); }
+    else o.name = token();
+    if (str[i] === ":") { i++; o.len = parseFloat(token()); }
+    return o;
+  }
+  var r = sub(); r.len = 0; return r;
+}
+function tdWantOrder() { return TD.set === "N" ? "name" : "ml:" + TD.set; }     // row order in which the tree on show stands level with its rows
+function tdFollowOrder() {                                     // the Order selector changed: tree order -> the ML tree again
+  if (!TD.on || TD.set !== "N" || S.order.indexOf("ml:") !== 0) return;
+  TD.set = "A"; TD.built = null; tdSave(); tdSyncUi();
+}
 function tdKey() { return S.frame + "_" + TD.set; }
 function tdSave() { store("td", { on: TD.on, set: TD.set, lens: TD.lens, col: TD.col, w: TD.w }); }
 function tdFull() {                                           // midpoint-rooted, ladderized: the same tree the ML row order comes from
+  if (TD.set === "N") { var nt = S.trees && S.trees.name_order && S.trees.name_order[S.frame]; if (!nt) return null; TD.nroot = TD.nroot || {};
+    if (!TD.nroot[S.frame] || TD.nroot[S.frame].nw !== nt.newick) TD.nroot[S.frame] = { nw: nt.newick, root: nameParse(nt.newick) };
+    return TD.nroot[S.frame].root; }
   var key = tdKey(); if (!S.trees || !S.trees.trees[key]) return null;
   if (!TD.root[key]) { var root = rootGraph(treeGraph(key), "mid"); annotate(root); ladderize(root); TD.root[key] = root; }
   return TD.root[key];
@@ -4940,9 +4966,9 @@ function drawTreeDock() {
   ctx.restore();
   ctx.fillStyle = T["cv-bg"]; ctx.fillRect(0, h - BOT, w, BOT); ctx.fillStyle = T["cv-grid"]; ctx.fillRect(0, h - BOT, w, 1);
   ctx.fillStyle = T["cv-muted"]; ctx.font = "10px " + NAMES_FONT; ctx.textAlign = "left"; ctx.textBaseline = "top";
-  var ti = S.trees.trees[tdKey()];
+  var ti = TD.set === "N" ? null : S.trees.trees[tdKey()];
   ctx.fillText(B.leaves.length + " of " + V.nr + " rows in this tree" + (B.missing ? " (" + B.missing + " without a tip)" : ""), 6, h - BOT + 4);
-  ctx.fillText((ti && ti.model ? ti.model + " · " : "") + "midpoint root", 6, h - BOT + 17);
+  ctx.fillText((ti && ti.model ? ti.model + " · " : "") + (TD.set === "N" ? "name-order tree (UPGMA, not ML)" : "midpoint root"), 6, h - BOT + 17);
   if (TD.lens === "phylo") {
     var raw = B.maxD * 0.25, mag = Math.pow(10, Math.floor(Math.log10(raw))), nice = [1, 2, 5, 10].map(function (m) { return m * mag; }).filter(function (v) { return v <= raw * 1.4; }).pop() || mag, sx = nice / B.maxD * treeW;
     ctx.strokeStyle = T["cv-muted"]; ctx.lineWidth = 1.3; ctx.beginPath(); ctx.moveTo(padL, h - BOT + 40); ctx.lineTo(padL + sx, h - BOT + 40); ctx.stroke(); ctx.fillText(nice + " substitutions per site", padL + sx + 6, h - BOT + 35);
@@ -4957,7 +4983,7 @@ function tdPointer(ev) {                                       // -> {node} | {r
 }
 function tdClades(o, out) { out = out || []; if (!o.kids.length) out.push(o.name); else o.kids.forEach(function (k) { tdClades(k, out); }); return out; }
 function tdHoverClear() { var had = TD.hover || (S.hover && S.hover.fromTree) || S.rowHot != null; S.rowHot = null; TD.hover = null; if (S.hover && S.hover.fromTree) { S.hover = null; $("msaFoot").innerHTML = HINT; } if (had) schedule(); }
-function tdSyncOrder() { S.order = "ml:" + TD.set; $("orderSel").value = S.order; store("order", S.order); rebuild(); }
+function tdSyncOrder() { S.order = tdWantOrder(); $("orderSel").value = S.order; store("order", S.order); rebuild(); }
 function tdSyncUi() {
   $("tdSet").value = TD.set; $("tdCol").hidden = $("tdColLbl").hidden = !S.plug; $("tdCol").value = TD.col; $("treeWinBtn").setAttribute("aria-pressed", TD.on ? "true" : "false"); $("treeDock").hidden = !TD.on;
   document.querySelectorAll("#tdLens button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-l") === TD.lens ? "true" : "false"); });
@@ -4965,17 +4991,21 @@ function tdSyncUi() {
 }
 function tdToggle(on) {
   TD.on = !!on; tdSave(); tdSyncUi();
-  if (TD.on && S.order !== "ml:" + TD.set && !tdKeepOrder()) tdSyncOrder(); else { sizeScroller(); schedule(); }
+  if (TD.on && S.order !== tdWantOrder() && !tdKeepOrder()) tdSyncOrder(); else { sizeScroller(); schedule(); }
 }
 function initTreeDock() {
   var sv = store("td"); if (sv) Object.keys(sv).forEach(function (k) { if (k in TD && k !== "root" && k !== "built") TD[k] = sv[k]; });
-  if (["A", "B", "AB"].indexOf(TD.set) < 0 || S.meta.homo) TD.set = S.meta.homo ? "A" : "AB"; if (!(TD.w >= 140 && TD.w <= 560)) TD.w = 250;
+  if (!(S.meta.homo && TD.set === "N" && S.trees && S.trees.name_order) && (["A", "B", "AB"].indexOf(TD.set) < 0 || S.meta.homo)) TD.set = S.meta.homo ? "A" : "AB";
+  if (S.trees && S.trees.name_order && S.meta.homo && $("tdSet") && !$("tdSet").querySelector('option[value="N"]')) {
+    var tsel = $("tdSet"); tsel.options[0].textContent = "ML tree"; tsel.style.maxWidth = "130px"; tsel.title = "ML tree: maximum-likelihood tree of the frame on screen. Name-order tree: distance tree (UPGMA) calculated from the entries in name order, only name neighbours can be joined; its tips are level with the rows when Order = Name";
+    var nop = document.createElement("option"); nop.value = "N"; nop.textContent = "Name-order tree"; tsel.appendChild(nop);
+  } if (!(TD.w >= 140 && TD.w <= 560)) TD.w = 250;
   TD.cv = $("treeCv");
-  if (TD.on && S.order !== "ml:" + TD.set && !tdKeepOrder()) { S.order = "ml:" + TD.set; $("orderSel").value = S.order; }     // initTrees runs before the first view is built
+  if (TD.on && S.order !== tdWantOrder() && !tdKeepOrder()) { S.order = tdWantOrder(); $("orderSel").value = S.order; }     // initTrees runs before the first view is built
   tdSyncUi();
   $("treeWinBtn").addEventListener("click", function () { tdToggle(!TD.on); });
   $("tdClose").addEventListener("click", function () { tdToggle(false); }); $("tdRowsBy").addEventListener("click", function () { tdSyncOrder(); });
-  $("tdSet").addEventListener("change", function (e) { TD.set = e.target.value; tdSave(); TD.built = null; tdSyncOrder(); });
+  $("tdSet").addEventListener("change", function (e) { TD.set = e.target.value; tdSave(); TD.built = null; if (TD.set !== "N" && tdKeepOrder()) { tdSyncUi(); sizeScroller(); schedule(); } else tdSyncOrder(); });
   $("tdCol").addEventListener("change", function (e) { TD.col = e.target.value; tdSave(); schedule(); });
   document.querySelectorAll("#tdLens button").forEach(function (b) { b.addEventListener("click", function () { TD.lens = b.getAttribute("data-l"); tdSave(); tdSyncUi(); schedule(); }); });
   TD.cv.addEventListener("wheel", function (e) { scroller.scrollTop += e.deltaY; e.preventDefault(); }, { passive: false });
@@ -4993,7 +5023,7 @@ function initTreeDock() {
     var rc = TD.cv.getBoundingClientRect(), x = e.clientX - rc.left, y = e.clientY - rc.top, nb = TD.noteBtn;
     if (nb && x >= nb.x && x <= nb.x + nb.w && y >= nb.y && y <= nb.y + nb.h) { tdSyncOrder(); return; }
     var h = tdPointer(e); if (!h) return;
-    if (h.node) { var ids = tdClades(h.node); ids.forEach(function (id) { if (e.altKey) S.picked.delete(id); else S.picked.add(id); }); updatePickUI(); schedule(); toast((e.altKey ? "Unpicked " : "Picked ") + ids.length + " entries (" + S.picked.size + " picked). Use Open as subset to work with them."); if (!e.altKey) anOnPick(ids, mlOrderKey(TD.set)); return; }
+    if (h.node) { var ids = tdClades(h.node); ids.forEach(function (id) { if (e.altKey) S.picked.delete(id); else S.picked.add(id); }); updatePickUI(); schedule(); toast((e.altKey ? "Unpicked " : "Picked ") + ids.length + " entries (" + S.picked.size + " picked). Use Open as subset to work with them."); if (!e.altKey && TD.set !== "N") anOnPick(ids, mlOrderKey(TD.set)); return; }
     S.sel = null; showRow(S.view.rows[h.ri]).then(function () { renderInspector(); schedule(); });
   });
   var g = $("treeGrip"), dragging = false;
