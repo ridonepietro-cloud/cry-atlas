@@ -5,6 +5,8 @@ An interactive atlas of the **670 distinct Cry toxin sequences** (795 names) of 
 
 **Live page:** https://ridonepietro-cloud.github.io/cry-atlas/ (opens `site/index.html`)
 
+**Quick guide** (select, navigate, visualise entries and groups): [docs/user_guide.md](docs/user_guide.md)
+
 What it shows, per toxin: the sequence in a structure-based and a sequence-based alignment (both built domain by domain: N-terminus, Domain I, II, III,
 C-terminal protoxin half), AlphaFold DB and PDB models, RING 4.0 contacts and the residues that connect domains (NODE residues), maximum-likelihood trees
 of the whole toxin and of each domain (with a tanglegram to compare them), genome maps with gene synteny, BPPRC target-order data, and the BPPRC names, years and holotype flags.
