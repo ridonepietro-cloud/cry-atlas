@@ -156,5 +156,5 @@ spec = {"pack": "cry", "system": "cry", "title": "Cry toxins (3-domain insectici
         "node_short": "yes (contact with another domain at a strict NODE column)",
         "order_basis": "guide-tree order of the Domain II alignment (MAFFT --reorder); the ML tree order is used when the Trees view is on", "order_short": "tree",
         "inputs": {"bpprc": "bpprc-db.org Cry class (category_download 2026-11-24), holotype list, per-domain sequences, structures table, specificity export", "structures": "AlphaFold DB (exact-sequence models), RCSB PDB entries >= 97 % identical to a row", "contacts": "RING 4.0"},
-        "cry": {"modules": MODCOL, "n_names": sum(len(r["names"]) for r in rows), "features": {"file": "features.json"}}, "features": features, "tangle": {"default": ["struct_A", "struct_DIII"]}}
+        "cry": {"modules": MODCOL, "n_names": sum(len(r["names"]) for r in rows), "features": {"file": "features.json"}}, "features": features, "tangle": {"default": ["struct_DII", "struct_DIII"]}}
 CP.build(spec)

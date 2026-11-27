@@ -1,0 +1,11 @@
+frame_col_1	frame_col_2	module_1	module_2	freq_nematode	freq_insect	Cry5Ba1_residue_1	Cry5Ba1_residue_2
+3408	3414	C-term	C-term	0.933	0.0	1030	1035
+3362	3369	C-term	C-term	0.933	0.006	987	993
+2920	2954	C-term	C-term	0.933	0.013	829	838
+1898	2014	DIII	DIII	0.933	0.019	586	616
+3020	3369	C-term	C-term	0.933	0.019	884	993
+3050	3056	C-term	C-term	0.933	0.032	904	907
+3049	3056	C-term	C-term	0.933	0.032	903	907
+3398	3402	C-term	C-term	0.933	0.032	1020	1024
+3366	3369	C-term	C-term	0.933	0.038	990	993
+3424	3516	C-term	C-term	0.867	0.051	1045	1086

@@ -1,0 +1,668 @@
+row	entry	family	class	category	group_DI	group_DII	group_DIII	share_DI	share_DII	share_DIII	closest_DI	closest_DII	closest_DIII
+C143	Cry1Dc1	Cry1	Cry1	all three differ	Cry1F	Cry1D	Cry1A	0.6	0.9	1.0	Cry1Ha1	Cry1Da1	Cry1Ab18
+C457	Cry8Ta1	Cry8	Cry8 / Cry7 / Cry3	all three differ	Cry1I	Cry9D	Cry8I	0.6	0.6	0.7	Cry8Da1	Cry9Da1	Cry8Ib3
+C115	Cry1Bi1	Cry1	Cry1	Domain III differs	Cry1B	Cry1B	Cry1A	1.0	1.0	0.9	Cry1Bg1	Cry1Bg1	Cry1Bj1
+C116	Cry1Bj1	Cry1	Cry1	Domain III differs	Cry1B	Cry1B	Cry1A	1.0	1.0	0.9	Cry1Be5	Cry1Be1	Cry1Bi1
+C132	Cry1Cb1	Cry1	Cry1	Domain III differs	Cry1C	Cry1C	Cry1B	1.0	1.0	0.8	Cry1Cb4	Cry1Cb4	Cry1Cb4
+C134	Cry1Cb4	Cry1	Cry1	Domain III differs	Cry1C	Cry1C	Cry1B	1.0	1.0	0.8	Cry1Cb1	Cry1Cb1	Cry1Cb1
+C154	Cry1Eb1	Cry1	Cry1	Domain III differs	Cry1E	Cry1E	Cry1B	0.8	0.8	0.8	Cry1Ea1	Cry1Ea1	Cry1Cb1
+C224	Cry1Ja1	Cry1	Cry1	Domain III differs	Cry1J	Cry1J	Cry1F	0.6	0.6	0.6	Cry1Ja2	Cry1Ja3	Cry1Ja2
+C225	Cry1Ja2	Cry1	Cry1	Domain III differs	Cry1J	Cry1J	Cry1F	0.6	0.6	0.6	Cry1Ja3	Cry1Ja1	Cry1Ja3
+C226	Cry1Ja3	Cry1	Cry1	Domain III differs	Cry1J	Cry1J	Cry1F	0.6	0.6	0.6	Cry1Ja2	Cry1Ja1	Cry1Ja2
+C650	Cry63Aa1	Cry63	Cry2 / Cry11 / Cry18 +2	Domain II differs	Cry2A	Cry31A	Cry2A	0.8	0.6	0.9	Cry2Ba1	Cry70Ba1	Cry18Ba1
+C494	Cry10Aa1	Cry10	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry54A	Cry43C	0.3	0.3	0.4	Cry10Aa3	Cry10Aa2	Cry10Aa3
+C495	Cry10Aa2	Cry10	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry54A	Cry43C	0.3	0.3	0.4	Cry10Aa1	Cry10Aa1	Cry10Aa1
+C496	Cry10Aa3	Cry10	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry54A	Cry43C	0.3	0.3	0.4	Cry10Aa1	Cry10Aa1	Cry10Aa1
+C497	Cry11Aa1	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.3	0.3	0.3	Cry11Aa6	Cry11Aa4	Cry11Aa6
+C498	Cry11Aa4	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.3	0.3	0.3	Cry11Aa1	Cry11Aa5	Cry11Aa1
+C499	Cry11Aa5	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.3	0.3	0.3	Cry11Aa1	Cry11Aa4	Cry11Aa4
+C500	Cry11Aa6	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.3	0.3	0.3	Cry11Aa1	Cry11Aa5	Cry11Aa1
+C501	Cry11Ba1	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.4	0.4	0.4	Cry11Bb2	Cry11Bb2	Cry11Bb2
+C502	Cry11Bb1	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.4	0.4	0.4	Cry11Bb2	Cry11Bb2	Cry11Bb2
+C503	Cry11Bb2	Cry11	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry11A	Cry11A	0.4	0.4	0.4	Cry11Bb1	Cry11Bb1	Cry11Bb1
+C504	Cry12Aa1	Cry12	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry70B	Cry14A	0.4	0.2	0.3	Cry5Ad1	Cry70Ba1	Cry14Ac1
+C505	Cry13Aa1	Cry13	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry14A	Cry14A	Cry14A	0.3	0.3	0.3	Cry14Ac1	Cry14Ac1	Cry14Ac1
+C506	Cry14Aa1	Cry14	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry5B	Cry5B	0.3	0.3	0.3	Cry14Ac1	Cry14Ab1	Cry14Ab1
+C507	Cry14Ab1	Cry14	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry5B	Cry5B	0.3	0.3	0.3	Cry14Ac1	Cry14Aa1	Cry14Ac1
+C508	Cry14Ac1	Cry14	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry5B	Cry5B	0.3	0.3	0.3	Cry14Ab1	Cry14Aa1	Cry14Ab1
+C509	Cry16Aa1	Cry16	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry8C	Cry56A	Cry43C	0.5	0.4	0.8	Cry7Ha1	Cry27Aa1	Cry17Aa1
+C510	Cry17Aa1	Cry17	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry4B	Cry43C	0.4	0.4	0.8	Cry27Aa1	Cry27Aa1	Cry16Aa1
+C511	Cry18Aa1	Cry18	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	0.6	0.6	0.8	Cry18Ca1	Cry18Ba1	Cry18Ba1
+C512	Cry18Ba1	Cry18	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	0.6	0.6	0.8	Cry18Ca1	Cry18Ca1	Cry18Aa1
+C513	Cry18Ca1	Cry18	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	0.6	0.6	0.8	Cry18Ba1	Cry18Ba1	Cry18Ba1
+C514	Cry19Aa1	Cry19	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry8B	Cry39A	Cry24C	0.3	0.2	0.1	Cry39Aa1	Cry19Ba1	Cry24Ca1
+C515	Cry19Ba1	Cry19	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry39A	Cry4C	0.2	0.2	0.6	Cry4Da1	Cry19Aa1	Cry4Da1
+C000	Cry1Aa1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa4	Cry1Aa8	Cry1Ab11
+C009	Cry1Aa10	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa4	Cry1Ab11
+C010	Cry1Aa14	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Aa5	Cry1Aa5	Cry1Ab18
+C011	Cry1Aa15	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa4	Cry1Ab11
+C012	Cry1Aa17	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa8	Cry1Ab11
+C013	Cry1Aa18	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa8	Cry1Ab11
+C014	Cry1Aa19	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa5	Cry1Aa2
+C001	Cry1Aa2	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ai1	Cry1Aa8	Cry1Ab1
+C015	Cry1Aa20	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa2	Cry1Aa8	Cry1Ab11
+C016	Cry1Aa21	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa8	Cry1Aa2
+C017	Cry1Aa22	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa2	Cry1Aa8	Cry1Aa2
+C018	Cry1Aa23	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa5	Cry1Aa2
+C019	Cry1Aa24	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa8	Cry1Ab11
+C002	Cry1Aa3	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa2	Cry1Aa8	Cry1Aa2
+C003	Cry1Aa4	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa1	Cry1Aa10	Cry1Aa2
+C004	Cry1Aa5	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa19	Cry1Aa19	Cry1Aa2
+C005	Cry1Aa6	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa8	Cry1Ab11
+C006	Cry1Aa7	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Aa5	Cry1Aa14	Cry1Ab18
+C007	Cry1Aa8	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa22	Cry1Aa2
+C008	Cry1Aa9	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa2	Cry1Ai1	Cry1Ab11
+C020	Cry1Ab1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab6	Cry1Ab11	Cry1Aa2
+C026	Cry1Ab10	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab1	Cry1Ab11
+C027	Cry1Ab11	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab1	Cry1Ab17
+C028	Cry1Ab14	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab28	Cry1Ab23	Cry1Aa2
+C029	Cry1Ab16	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab22	Cry1Ab1	Cry1Ab11
+C030	Cry1Ab17	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab14	Cry1Ab1	Cry1Ab11
+C031	Cry1Ab18	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Ab20	Cry1Ab1	Cry1Ab35
+C032	Cry1Ab19	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab14	Cry1Ab11
+C021	Cry1Ab2	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab14	Cry1Aa6
+C033	Cry1Ab20	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab30	Cry1Ab1	Cry1Ab11
+C034	Cry1Ab21	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab5	Cry1Ab11
+C035	Cry1Ab22	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Ab20	Cry1Ab1	Cry1Ab18
+C036	Cry1Ab23	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab14	Cry1Aa2
+C037	Cry1Ab26	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab20	Cry1Ab1	Cry1Aa6
+C038	Cry1Ab27	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab5	Cry1Aa6
+C039	Cry1Ab28	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab5	Cry1Ab1	Cry1Ab11
+C040	Cry1Ab30	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab20	Cry1Ab5	Cry1Aa6
+C041	Cry1Ab31	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Ab1	Cry1Ab1	Cry1Ab18
+C042	Cry1Ab32	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab5	Cry1Ab11
+C043	Cry1Ab33	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab36	Cry1Ac1	Cry1Aa2
+C044	Cry1Ab34	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ad1	Cry1Ab5	Cry1Ab11
+C045	Cry1Ab35	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Ab1	Cry1Ab1	Cry1Ab18
+C046	Cry1Ab36	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab5	Cry1Ab11
+C022	Cry1Ab5	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab1	Cry1Ab11
+C023	Cry1Ab6	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab1	Cry1Ab11
+C024	Cry1Ab7	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab1	Cry1Ab11
+C025	Cry1Ab8	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab1	Cry1Ab5	Cry1Ab11
+C047	Cry1Ac1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac40	Cry1Ac30	Cry1Ah2
+C053	Cry1Ac11	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac15	Cry1Ac1
+C054	Cry1Ac12	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac2	Cry1Ac1
+C055	Cry1Ac13	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac2	Cry1Ac1
+C056	Cry1Ac14	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ah2	Cry1Ac1
+C057	Cry1Ac15	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac14	Cry1Ac1
+C058	Cry1Ac16	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac1
+C059	Cry1Ac17	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac14	Cry1Ac6
+C060	Cry1Ac18	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac3	Cry1Ac35
+C061	Cry1Ac19	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac1
+C048	Cry1Ac2	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac35	Cry1Ah3	Cry1Ac1
+C062	Cry1Ac20	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac14	Cry1Ac1
+C063	Cry1Ac21	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac2	Cry1Ac1
+C064	Cry1Ac22	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac4	Cry1Ac2
+C065	Cry1Ac23	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac1	Cry1Ac6
+C066	Cry1Ac24	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Ac6	Cry1Ac2
+C067	Cry1Ac25	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac20	Cry1Ac1
+C068	Cry1Ac26	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac2	Cry1Ac1
+C069	Cry1Ac27	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ah1	Cry1Ac1
+C070	Cry1Ac28	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac4	Cry1Ac1
+C049	Cry1Ac3	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac32	Cry1Ac18	Cry1Ac1
+C071	Cry1Ac30	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac22
+C072	Cry1Ac31	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac1
+C073	Cry1Ac32	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac14	Cry1Ac1
+C074	Cry1Ac33	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac2	Cry1Ac18
+C075	Cry1Ac34	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac2	Cry1Ac18
+C076	Cry1Ac35	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac24	Cry1Ac18
+C077	Cry1Ac36	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac2	Cry1Ac18
+C078	Cry1Ac37	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac2	Cry1Ac3	Cry1Ac18
+C079	Cry1Ac38	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac6
+C080	Cry1Ac39	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac22
+C050	Cry1Ac4	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac1	Cry1Ac1
+C081	Cry1Ac40	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac1	Cry1Ac1	Cry1Ac1
+C051	Cry1Ac5	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac2	Cry1Ac1
+C052	Cry1Ac6	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ac3	Cry1Ac24	Cry1Ac1
+C082	Cry1Ad1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ad2	Cry1Ad2	Cry1Ad2
+C083	Cry1Ad2	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ad1	Cry1Ad1	Cry1Ad1
+C084	Cry1Ae1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	0.9	Cry1Ad1	Cry1Ac1	Cry1Ab18
+C085	Cry1Af1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ab14	Cry1Ab14	Cry1Aa2
+C086	Cry1Ag1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa5	Cry1Aa7	Cry1Aa6
+C087	Cry1Ah1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ah3	Cry1Ac3	Cry1Ac1
+C088	Cry1Ah2	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ah1	Cry1Ac14	Cry1Ac1
+C089	Cry1Ah3	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ah1	Cry1Ac2	Cry1Ac1
+C090	Cry1Ai1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aa2	Cry1Aa5	Cry1Ac1
+C091	Cry1Aj1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Ak1	Cry1Aa8	Cry1Ab33
+C092	Cry1Ak1	Cry1	Cry1	concordant	Cry1A	Cry1A	Cry1A	1.0	1.0	1.0	Cry1Aj1	Cry1Aa8	Cry1Ac6
+C093	Cry1Ba1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	1.0	0.4	Cry1Ba7	Cry1Ba6	Cry1Ba7
+C094	Cry1Ba2	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	1.0	0.4	Cry1Ba1	Cry1Ba1	Cry1Ba3
+C095	Cry1Ba3	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	1.0	0.4	Cry1Ba1	Cry1Ba1	Cry1Ba2
+C096	Cry1Ba6	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	1.0	0.4	Cry1Ba3	Cry1Ba1	Cry1Ba1
+C097	Cry1Ba7	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	1.0	0.4	Cry1Ba1	Cry1Ba1	Cry1Ba1
+C098	Cry1Bb1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.4	Cry1Bc1	Cry1Bd1	Cry1Bb2
+C099	Cry1Bb2	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.4	Cry1Bb1	Cry1Bd3	Cry1Bb3
+C100	Cry1Bb3	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.4	Cry1Bb1	Cry1Bb2	Cry1Bb2
+C101	Cry1Bc1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.4	Cry1Bb1	Cry1Bb1	Cry1Bb3
+C102	Cry1Bd1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.5	Cry1Bb1	Cry1Bb1	Cry1Bd2
+C103	Cry1Bd2	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.5	Cry1Bb1	Cry1Bb1	Cry1Bd1
+C104	Cry1Bd3	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	1.0	0.5	Cry1Bd2	Cry1Bb2	Cry1Bd2
+C105	Cry1Be1	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be6	Cry1Be6	Cry1Be2
+C106	Cry1Be2	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be1	Cry1Be1	Cry1Be5
+C107	Cry1Be3	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be4	Cry1Be1	Cry1Be2
+C108	Cry1Be4	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be1	Cry1Be1	Cry1Be2
+C109	Cry1Be5	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be1	Cry1Be1	Cry1Be2
+C110	Cry1Be6	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Be1	Cry1Be1	Cry1Be2
+C111	Cry1Bf1	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Bf2	Cry1Bf2	Cry1Be2
+C112	Cry1Bf2	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Bf1	Cry1Bf1	Cry1Be2
+C113	Cry1Bg1	Cry1	Cry1	concordant	Cry1B	Cry1B	Cry1B	1.0	1.0	0.8	Cry1Bi1	Cry1Bi1	Cry1Be2
+C114	Cry1Bh1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	0.8	0.8	0.5	Cry1Bd2	Cry1Bk1	Cry1Bd1
+C117	Cry1Bk1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry1B	Cry1B	1.0	0.8	0.4	Cry1Ba3	Cry1Bh1	Cry1Bc1
+C118	Cry1Ca1	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca16	Cry1Ca5	Cry1Ca5
+C126	Cry1Ca11	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca4	Cry1Ca1
+C127	Cry1Ca12	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca4	Cry1Ca1
+C128	Cry1Ca13	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca7	Cry1Ca1
+C129	Cry1Ca14	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca4	Cry1Ca1
+C130	Cry1Ca16	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca4	Cry1Ca7	Cry1Ca1
+C131	Cry1Ca17	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca5	Cry1Ca1
+C119	Cry1Ca2	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca7	Cry1Ca11	Cry1Ca1
+C120	Cry1Ca3	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca5	Cry1Ca1
+C121	Cry1Ca4	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca16	Cry1Ca12	Cry1Ca1
+C122	Cry1Ca5	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca4	Cry1Ca1
+C123	Cry1Ca6	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca3	Cry1Ca4	Cry1Ca1
+C124	Cry1Ca7	Cry1	Cry1	concordant	Cry1C	Cry1C	Cry1C	1.0	1.0	1.0	Cry1Ca2	Cry1Ca16	Cry1Ca1
+C135	Cry1Cc1	Cry1	Cry1	mixed neighbourhood	Cry1C	Cry1C	Cry1B	1.0	1.0	0.5	Cry1Ca2	Cry1Ca11	Cry1Ba1
+C136	Cry1Da1	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da4	Cry1De1	Cry1De1
+C137	Cry1Da3	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da1	Cry1Da1	Cry1Da5
+C138	Cry1Da4	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da1	Cry1Da1	Cry1Da3
+C139	Cry1Da5	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da1	Cry1Da1	Cry1Da3
+C140	Cry1Da6	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da1	Cry1Da1	Cry1Da1
+C141	Cry1Db1	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.8	0.9	0.7	Cry1Db2	Cry1Db2	Cry1Db2
+C142	Cry1Db2	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.8	0.9	0.7	Cry1Db1	Cry1Da1	Cry1Db1
+C144	Cry1Dd1	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.8	0.9	0.8	Cry1Db1	Cry1Da1	Cry1Da1
+C145	Cry1De1	Cry1	Cry1	concordant	Cry1D	Cry1D	Cry1D	0.7	0.9	0.7	Cry1Da1	Cry1Da1	Cry1Da1
+C146	Cry1Ea1	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea10	Cry1Ea5	Cry1Ea5
+C152	Cry1Ea10	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea1	Cry1Ea1
+C153	Cry1Ea12	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea3	Cry1Ea1
+C147	Cry1Ea3	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea12	Cry1Ea1
+C148	Cry1Ea4	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea3	Cry1Ea1
+C149	Cry1Ea5	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea1	Cry1Ea1
+C150	Cry1Ea8	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea3	Cry1Ea1
+C151	Cry1Ea9	Cry1	Cry1	concordant	Cry1E	Cry1E	Cry1E	0.8	0.8	0.7	Cry1Ea1	Cry1Ea3	Cry1Ea1
+C155	Cry1Fa1	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.2	Cry1Fa4	Cry1Fa3	Cry1Fa4
+C156	Cry1Fa3	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.2	Cry1Fa1	Cry1Fa4	Cry1Fa4
+C157	Cry1Fa4	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.2	Cry1Fa1	Cry1Fa3	Cry1Fa3
+C158	Cry1Fb1	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb3	Cry1Fb7	Cry1Fb3
+C159	Cry1Fb2	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb1	Cry1Fb1	Cry1Fb1
+C160	Cry1Fb3	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb1	Cry1Fb6	Cry1Fb1
+C161	Cry1Fb4	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb1	Cry1Fb6	Cry1Fb6
+C162	Cry1Fb6	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb1	Cry1Fb4	Cry1Fb4
+C163	Cry1Fb7	Cry1	Cry1	mixed neighbourhood	Cry1F	Cry1F	Cry1F	0.8	0.8	0.5	Cry1Fb1	Cry1Fb1	Cry1Fb1
+C164	Cry1Ga1	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1I	0.4	0.4	0.7	Cry1Ga2	Cry1Ga2	Cry1Ga2
+C165	Cry1Ga2	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1I	0.4	0.4	0.7	Cry1Ga1	Cry1Ga1	Cry1Ga1
+C166	Cry1Gb1	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1E	Cry1I	0.4	0.8	0.7	Cry1Gb2	Cry1Gb2	Cry1Gb2
+C167	Cry1Gb2	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1E	Cry1I	0.4	0.8	0.7	Cry1Gb1	Cry1Gb1	Cry1Gb1
+C168	Cry1Gc1	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1B	0.4	0.4	0.5	Cry1Ga1	Cry1Gb2	Cry1Ja1
+C169	Cry1Ha1	Cry1	Cry1	mixed neighbourhood	Cry1H	Cry1G	Cry1D	0.3	0.4	0.9	Cry1Hb1	Cry1Hc1	Cry1Da1
+C170	Cry1Hb1	Cry1	Cry1	mixed neighbourhood	Cry1H	Cry1G	Cry1D	0.3	0.4	0.8	Cry1Hb2	Cry1Hb2	Cry1Hb2
+C171	Cry1Hb2	Cry1	Cry1	mixed neighbourhood	Cry1H	Cry1G	Cry1D	0.3	0.4	0.8	Cry1Hb1	Cry1Hb1	Cry1Hb1
+C172	Cry1Hc1	Cry1	Cry1	mixed neighbourhood	Cry1H	Cry1G	Cry1D	0.3	0.4	0.9	Cry1Hb1	Cry1Ha1	Cry1Da1
+C173	Cry1Ia1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia3	Cry1Ia29	Cry1Ia5
+C182	Cry1Ia11	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia9	Cry1Ia3	Cry1Ia1
+C183	Cry1Ia12	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia5	Cry1Ia2	Cry1Ia1
+C184	Cry1Ia13	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C185	Cry1Ia15	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C186	Cry1Ia16	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C187	Cry1Ia17	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia1	Cry1Ia29
+C174	Cry1Ia2	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia21	Cry1Ia26	Cry1Ia1
+C188	Cry1Ia20	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia24	Cry1Ia1
+C189	Cry1Ia21	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia22	Cry1Ia23
+C190	Cry1Ia22	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia28	Cry1Ia21	Cry1Ia21
+C191	Cry1Ia23	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1If1	Cry1Ia21
+C192	Cry1Ia24	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia20	Cry1Ia17
+C193	Cry1Ia25	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia22	Cry1Ia2	Cry1Ia2
+C194	Cry1Ia26	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia17
+C195	Cry1Ia27	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia9	Cry1Ia2	Cry1Ia17
+C196	Cry1Ia28	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia22	Cry1Ia1	Cry1Ia1
+C197	Cry1Ia29	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia1	Cry1Ia17
+C175	Cry1Ia3	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia1	Cry1Ia2	Cry1Ia1
+C198	Cry1Ia30	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia41	Cry1Ia41	Cry1Ia17
+C199	Cry1Ia31	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C200	Cry1Ia33	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C201	Cry1Ia35	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C202	Cry1Ia37	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C176	Cry1Ia4	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia1
+C203	Cry1Ia41	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia30	Cry1Ia30	Cry1Ia2
+C204	Cry1Ia43	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia23	Cry1Ib3
+C177	Cry1Ia5	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia12	Cry1Ia2	Cry1Ia1
+C178	Cry1Ia6	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia2	Cry1Ia2
+C179	Cry1Ia7	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ie2	Cry1If1
+C180	Cry1Ia8	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia2	Cry1Ia3	Cry1Ia1
+C181	Cry1Ia9	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ia27	Cry1Ia2	Cry1Ia1
+C205	Cry1Ib1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib3	Cry1Ib2	Cry1Ia7
+C213	Cry1Ib12	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib7	Cry1Ib2	Cry1Ia7
+C206	Cry1Ib2	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib1	Cry1Ib5	Cry1Ia7
+C207	Cry1Ib3	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib1	Cry1Ib2	Cry1Ia43
+C208	Cry1Ib4	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib5	Cry1Ib2	Cry1Ie1
+C209	Cry1Ib5	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib6	Cry1Ib2	Cry1Ib6
+C210	Cry1Ib6	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib5	Cry1Ib2	Cry1Ib5
+C211	Cry1Ib7	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib12	Cry1Ib2	Cry1Ia7
+C212	Cry1Ib8	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib5	Cry1Ib2	Cry1Ib5
+C214	Cry1Ic1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ic2	Cry1Ic2	Cry1Ic2
+C215	Cry1Ic2	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ic1	Cry1Ic1	Cry1Ic1
+C216	Cry1Id1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	0.8	1.0	1.0	Cry1Id3	Cry1Id3	Cry1Id3
+C217	Cry1Id3	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	0.8	1.0	1.0	Cry1Id1	Cry1Id1	Cry1Id1
+C218	Cry1Ie1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ib4	Cry1Ie2	Cry1Ib4
+C219	Cry1Ie2	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ie4	Cry1Ie5	Cry1Ib7
+C220	Cry1Ie4	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ie2	Cry1Ie2	Cry1Ie2
+C221	Cry1Ie5	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ie2	Cry1Ie2	Cry1Ib4
+C222	Cry1If1	Cry1	Cry1	concordant	Cry1I	Cry1I	Cry1I	1.0	1.0	1.0	Cry1Ig1	Cry1Ia23	Cry1Ia7
+C223	Cry1Ig1	Cry1	Cry1	mixed neighbourhood	Cry1I	Cry1I	Cry1F	1.0	1.0	0.3	Cry1If1	Cry1Ia2	Cry1Ka2
+C227	Cry1Jb1	Cry1	Cry1	mixed neighbourhood	Cry1J	Cry1J	Cry1B	0.6	0.6	0.5	Cry1Jd1	Cry1Ja2	Cry1Ja1
+C228	Cry1Jc1	Cry1	Cry1	mixed neighbourhood	Cry1J	Cry1J	Cry53A	0.6	0.6	0.2	Cry1Jc2	Cry1Jc2	Cry1Jc2
+C229	Cry1Jc2	Cry1	Cry1	mixed neighbourhood	Cry1J	Cry1J	Cry53A	0.6	0.6	0.2	Cry1Jc1	Cry1Jc1	Cry1Jc1
+C230	Cry1Jd1	Cry1	Cry1	mixed neighbourhood	Cry1J	Cry1J	Cry8P	0.6	0.6	0.3	Cry1Jc2	Cry1Jc1	Cry8Pa1
+C231	Cry1Ka1	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry8E	Cry1F	0.9	0.4	0.3	Cry1Ka2	Cry1Ka2	Cry1Ka2
+C232	Cry1Ka2	Cry1	Cry1	mixed neighbourhood	Cry1B	Cry8E	Cry1F	0.9	0.4	0.3	Cry1Ka1	Cry1Ka1	Cry1Ka1
+C233	Cry1La1	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1B	0.4	0.4	0.7	Cry1La2	Cry1La3	Cry1La3
+C234	Cry1La2	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1B	0.4	0.4	0.7	Cry1La3	Cry1La3	Cry1La1
+C235	Cry1La3	Cry1	Cry1	mixed neighbourhood	Cry1G	Cry1H	Cry1B	0.4	0.4	0.7	Cry1La2	Cry1La1	Cry1La1
+C236	Cry1Ma1	Cry1	Cry1	mixed neighbourhood	Cry1I	Cry8E	Cry1I	0.9	0.4	0.9	Cry1Ma2	Cry1Ma2	Cry1Ma2
+C237	Cry1Ma2	Cry1	Cry1	mixed neighbourhood	Cry1I	Cry8E	Cry1I	0.9	0.4	0.9	Cry1Ma1	Cry1Ma1	Cry1Ma1
+C238	Cry1Na1	Cry1	Cry1	mixed neighbourhood	Cry7A	Cry1C	Cry1B	0.7	0.7	0.5	Cry1Na2	Cry1Na3	Cry1Na2
+C239	Cry1Na2	Cry1	Cry1	mixed neighbourhood	Cry7A	Cry1C	Cry1B	0.7	0.7	0.5	Cry1Na1	Cry1Na1	Cry1Na1
+C240	Cry1Na3	Cry1	Cry1	mixed neighbourhood	Cry7A	Cry1C	Cry1B	0.7	0.7	0.5	Cry1Na1	Cry1Na1	Cry1Na1
+C241	Cry1Nb1	Cry1	Cry1	mixed neighbourhood	Cry7A	Cry1C	Cry1B	0.7	0.7	0.5	Cry1Na3	Cry1Na2	Cry1Na3
+C516	Cry20Aa1	Cry20	other small families	mixed neighbourhood	Cry20B	Cry20B	Cry1B	0.2	0.2	0.4	Cry20Ba2	Cry20Ba1	Cry20Ba2
+C517	Cry20Ba1	Cry20	other small families	mixed neighbourhood	Cry39A	Cry9G	Cry1B	0.2	0.2	0.4	Cry20Ba2	Cry20Ba2	Cry20Ba2
+C518	Cry20Ba2	Cry20	other small families	mixed neighbourhood	Cry39A	Cry9G	Cry1B	0.2	0.2	0.4	Cry20Ba1	Cry20Ba1	Cry20Ba1
+C519	Cry21Aa1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5B	Cry5B	Cry5B	0.3	0.3	0.3	Cry21Aa2	Cry21Aa2	Cry21Aa2
+C520	Cry21Aa2	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5B	Cry5B	Cry5B	0.3	0.3	0.3	Cry21Aa1	Cry21Aa3	Cry21Aa1
+C521	Cry21Aa3	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5B	Cry5B	Cry5B	0.3	0.3	0.3	Cry21Aa2	Cry21Aa2	Cry21Aa2
+C522	Cry21Ba1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21A	0.3	0.3	0.3	Cry21Aa3	Cry21Aa2	Cry21Aa1
+C523	Cry21Ca1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21A	0.3	0.3	0.3	Cry21Ca2	Cry21Ca2	Cry21Ca2
+C524	Cry21Ca2	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21A	0.3	0.3	0.3	Cry21Ca1	Cry21Ca1	Cry21Ca1
+C525	Cry21Da1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry5Ca1	Cry5Ca1	Cry5Ca1
+C526	Cry21Ea1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry21Ja1	Cry21Ja1	Cry21Ja1
+C527	Cry21Fa1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry21Aa3	Cry5Fa1	Cry21Ea1
+C528	Cry21Ga1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry21A	Cry14A	0.4	0.3	0.3	Cry5Da1	Cry21Aa2	Cry14Ac1
+C529	Cry21Ha1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry14A	Cry21A	Cry14A	0.3	0.3	0.3	Cry5Fa1	Cry5Fa1	Cry21Ga1
+C530	Cry21Ia1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21A	0.3	0.3	0.3	Cry21Aa3	Cry21Aa2	Cry21Ba1
+C531	Cry21Ja1	Cry21	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry21Ea1	Cry21Ea1	Cry21Ea1
+C532	Cry24Aa1	Cry24	other small families	mixed neighbourhood	Cry24B	Cry9G	Cry24C	0.1	0.2	0.1	Cry24Ba1	Cry24Ba1	Cry24Ca1
+C533	Cry24Ba1	Cry24	other small families	mixed neighbourhood	Cry24A	Cry9G	Cry43C	0.1	0.2	0.8	Cry24Aa1	Cry24Aa1	Cry68Aa1
+C534	Cry24Ca1	Cry24	other small families	mixed neighbourhood	Cry39A	Cry9G	Cry40B	0.2	0.2	0.1	Cry24Da1	Cry24Da1	Cry40Ba1
+C535	Cry24Da1	Cry24	other small families	mixed neighbourhood	Cry39A	Cry9G	Cry52B	0.2	0.2	0.1	Cry24Ca1	Cry24Ca1	Cry52Ba1
+C536	Cry25Aa1	Cry25	other small families	mixed neighbourhood	Cry9A	Cry9A	Cry8I	0.4	0.3	0.7	Cry40Da1	Cry59Ba1	Cry8Ib3
+C537	Cry26Aa1	Cry26	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry43C	Cry8E	Cry7F	0.5	0.5	0.2	Cry43Cd1	Cry8Ba1	Cry7Fa1
+C538	Cry27Aa1	Cry27	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry4B	Cry43C	0.4	0.4	0.8	Cry17Aa1	Cry4Fa1	Cry16Aa1
+C539	Cry28Aa1	Cry28	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry30C	Cry48A	0.6	0.2	0.3	Cry28Aa2	Cry28Aa2	Cry28Aa2
+C540	Cry28Aa2	Cry28	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry30C	Cry48A	0.6	0.2	0.3	Cry28Aa1	Cry28Aa1	Cry28Aa1
+C541	Cry29Aa1	Cry29	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry48A	0.4	0.4	0.3	Cry29Ba1	Cry29Ba1	Cry4Aa1
+C542	Cry29Ba1	Cry29	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry43C	0.4	0.4	0.8	Cry29Aa1	Cry29Aa1	Cry43Cd1
+C242	Cry2Aa1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa15	Cry2Aa8	Cry2Aa17
+C249	Cry2Aa11	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa3	Cry2Aa3	Cry2Aa3
+C250	Cry2Aa12	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa16	Cry2Aa1	Cry2Aa8
+C251	Cry2Aa13	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab8	Cry2Aa1	Cry2Aa1
+C252	Cry2Aa14	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa12	Cry2Aa1	Cry2Aa1
+C253	Cry2Aa15	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa1	Cry2Aa1	Cry2Aa1
+C254	Cry2Aa16	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa12	Cry2Aa1	Cry2Aa1
+C255	Cry2Aa17	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab25	Cry2Aa1	Cry2Aa1
+C256	Cry2Aa18	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa1	Cry2Aa1	Cry2Aa1
+C257	Cry2Aa23	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ak1	Cry2Aa1	Cry2Aa8
+C258	Cry2Aa24	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa4	Cry2Aa1	Cry2Aa1
+C243	Cry2Aa3	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa11	Cry2Aa11	Cry2Aa11
+C244	Cry2Aa4	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa1	Cry2Aa1	Cry2Aa8
+C245	Cry2Aa5	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa7	Cry2Aa7	Cry2Aa7
+C246	Cry2Aa6	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa1	Cry2Aa1	Cry2Aa1
+C247	Cry2Aa7	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa5	Cry2Aa5	Cry2Aa5
+C248	Cry2Aa8	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa1	Cry2Aa1	Cry2Aa1
+C259	Cry2Ab1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab17	Cry2Ab5
+C266	Cry2Ab10	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ab1	Cry2Ab1
+C267	Cry2Ab11	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab4	Cry2Ab4	Cry2Ab1
+C268	Cry2Ab13	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab14	Cry2Ab1
+C269	Cry2Ab14	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ag1	Cry2Ab13
+C270	Cry2Ab15	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C271	Cry2Ab17	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C272	Cry2Ab18	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab37	Cry2Ab39
+C273	Cry2Ab19	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab25	Cry2Ab1	Cry2Ab1
+C274	Cry2Ab20	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab5	Cry2Ab4
+C275	Cry2Ab21	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C276	Cry2Ab22	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C277	Cry2Ab23	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C278	Cry2Ab25	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ab1	Cry2Ab9
+C279	Cry2Ab26	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C280	Cry2Ab29	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ah1
+C281	Cry2Ab30	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C282	Cry2Ab31	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab1	Cry2Ab1
+C283	Cry2Ab32	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ab1	Cry2Ah9
+C284	Cry2Ab33	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab37	Cry2Ab1
+C285	Cry2Ab36	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab18	Cry2Ab1
+C286	Cry2Ab37	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab18	Cry2Ab39
+C287	Cry2Ab38	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ah9	Cry2Ab39	Cry2Ab1
+C288	Cry2Ab39	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ab38	Cry2Ab18
+C260	Cry2Ab4	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab11	Cry2Ab9	Cry2Ab20
+C289	Cry2Ab40	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ah7	Cry2Ah8
+C261	Cry2Ab5	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ab1	Cry2Ab1
+C262	Cry2Ab6	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab5	Cry2Ab37
+C263	Cry2Ab7	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab4	Cry2Ab4	Cry2Ab1
+C264	Cry2Ab8	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab5	Cry2Ab1
+C265	Cry2Ab9	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab4	Cry2Ab4	Cry2Ab25
+C290	Cry2Ac1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Ac8	Cry2Ac4
+C299	Cry2Ac10	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac2	Cry2Ac9	Cry2Ac4
+C300	Cry2Ac11	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac2	Cry2Ac5	Cry2Ac4
+C301	Cry2Ac12	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Ac8	Cry2Ac4
+C291	Cry2Ac2	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac10	Cry2Ac3	Cry2Ac6
+C292	Cry2Ac3	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ai1	Cry2Ac7	Cry2Ac4
+C293	Cry2Ac4	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac6	Cry2Ac5	Cry2Ac7
+C294	Cry2Ac5	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Ac3	Cry2Ac6
+C295	Cry2Ac6	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac2	Cry2Ac3	Cry2Ac4
+C296	Cry2Ac7	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Ac3	Cry2Ac4
+C297	Cry2Ac8	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac6	Cry2Ac5	Cry2Ac4
+C298	Cry2Ac9	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Ac10	Cry2Ac4
+C302	Cry2Ad1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad4	Cry2Ad6	Cry2Ad4
+C303	Cry2Ad2	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad1	Cry2Ad1	Cry2Ad1
+C304	Cry2Ad3	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad1	Cry2Ad1	Cry2Ad1
+C305	Cry2Ad4	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad1	Cry2Ab37	Cry2Ad1
+C306	Cry2Ad5	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa17	Cry2Ad1	Cry2Ad1
+C307	Cry2Ad6	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad1	Cry2Ad1	Cry2Ad1
+C308	Cry2Ad7	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ad1	Cry2Ad1	Cry2Ad1
+C309	Cry2Ae1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa11	Cry2Ab40	Cry2Ah1
+C310	Cry2Af1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Af2	Cry2Af2	Cry2Af2
+C311	Cry2Af2	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Af1	Cry2Af1	Cry2Af1
+C312	Cry2Ag1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab14	Cry2Ab14	Cry2Ab14
+C313	Cry2Ah1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ab37	Cry2Ah4
+C314	Cry2Ah2	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa13	Cry2Ab40	Cry2Ah1
+C315	Cry2Ah3	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ah5	Cry2Ah1
+C316	Cry2Ah4	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ah3	Cry2Ah1
+C317	Cry2Ah5	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ah3	Cry2Ah1
+C318	Cry2Ah7	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ab40	Cry2Ah1
+C319	Cry2Ah8	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ab40	Cry2Ab40
+C320	Cry2Ah9	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ab38	Cry2Ah2	Cry2Ab37
+C321	Cry2Ai1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Ac3	Cry2Aa1	Cry2Aa8
+C322	Cry2Ak1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa12	Cry2Ae1	Cry2Ah1
+C323	Cry2Al1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa4	Cry2Aa1	Cry2Aa1
+C324	Cry2Am1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	1.0	1.0	1.0	Cry2Aa12	Cry2Ab5	Cry2Ah9
+C325	Cry2Ba1	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	0.9	0.9	0.9	Cry2Ba2	Cry2Ba2	Cry2Ba2
+C326	Cry2Ba2	Cry2	Cry2 / Cry11 / Cry18 +2	concordant	Cry2A	Cry2A	Cry2A	0.9	0.9	0.9	Cry2Ba1	Cry2Ba1	Cry2Ba1
+C543	Cry30Aa1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.4	0.3	0.4	Cry30Ea2	Cry30Ba1	Cry30Ga2
+C544	Cry30Ba1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry43C	0.4	0.3	0.4	Cry30Ca2	Cry30Ca1	Cry10Aa1
+C545	Cry30Ca1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.4	0.3	0.3	Cry30Ca2	Cry30Ca2	Cry30Ca2
+C546	Cry30Ca2	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.4	0.3	0.3	Cry30Ca1	Cry30Ca1	Cry30Ca1
+C547	Cry30Da1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.4	0.4	Cry30Db1	Cry30Db1	Cry30Db1
+C548	Cry30Db1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.4	0.4	Cry30Da1	Cry30Da1	Cry30Da1
+C549	Cry30Ea1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.3	Cry30Ea2	Cry30Ea3	Cry30Ea4
+C550	Cry30Ea2	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.3	Cry30Ea4	Cry30Ea3	Cry30Ea4
+C551	Cry30Ea3	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.3	Cry30Ea2	Cry30Ea4	Cry30Ea4
+C552	Cry30Ea4	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.3	Cry30Ea2	Cry30Ea3	Cry30Ea1
+C553	Cry30Fa1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry4B	0.4	0.3	0.4	Cry30Aa1	Cry30Ba1	Cry50Ba2
+C554	Cry30Ga1	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.4	Cry30Ga2	Cry30Ga2	Cry30Ga2
+C555	Cry30Ga2	Cry30	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry30E	Cry30E	Cry30E	0.3	0.3	0.4	Cry30Ga1	Cry30Ga1	Cry30Ga1
+C556	Cry31Aa1	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Aa4	Cry31Aa4	Cry31Aa5
+C557	Cry31Aa2	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ad1	Cry31Aa6	Cry31Aa6
+C558	Cry31Aa4	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Aa1	Cry31Aa1	Cry31Aa5
+C559	Cry31Aa5	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Aa1	Cry31Ab1	Cry31Aa1
+C560	Cry31Aa6	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ab2	Cry31Aa2	Cry31Aa2
+C561	Cry31Ab1	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ab2	Cry31Ab2	Cry31Ab2
+C562	Cry31Ab2	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Aa4	Cry31Ab1	Cry31Ab1
+C563	Cry31Ac1	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ac2	Cry31Ac2	Cry31Ac2
+C564	Cry31Ac2	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ad2	Cry31Ac1	Cry31Ac1
+C565	Cry31Ad1	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Aa2	Cry31Ad2	Cry31Ad2
+C566	Cry31Ad2	Cry31	other small families	concordant	Cry31A	Cry31A	Cry31A	1.0	1.0	1.0	Cry31Ac2	Cry31Ad1	Cry31Ad1
+C567	Cry32Aa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32A	Cry32A	Cry32A	0.2	0.2	0.2	Cry32Ab1	Cry32Aa2	Cry32Aa2
+C568	Cry32Aa2	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32A	Cry32A	Cry32A	0.2	0.2	0.2	Cry32Ab1	Cry32Aa1	Cry32Aa1
+C569	Cry32Ab1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32A	Cry32A	Cry32A	0.2	0.2	0.2	Cry32Aa2	Cry32Aa1	Cry32Aa1
+C570	Cry32Ba1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32C	Cry10A	0.2	0.2	0.3	Cry32La1	Cry32La1	Cry32La1
+C571	Cry32Ca1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry69A	Cry32A	Cry32C	0.3	0.2	0.1	Cry32Cb1	Cry32Cb1	Cry32Cb1
+C572	Cry32Cb1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry69A	Cry32A	Cry32C	0.3	0.2	0.1	Cry32Ca1	Cry32Ca1	Cry32Ca1
+C573	Cry32Da1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32A	Cry32E	0.2	0.3	0.3	Cry32Ua1	Cry32Ua1	Cry32Ua1
+C574	Cry32Ea1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.2	0.2	0.2	Cry32Eb1	Cry32Eb1	Cry32Eb1
+C575	Cry32Ea2	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.2	0.2	0.2	Cry32Ea1	Cry32Eb1	Cry32Eb1
+C576	Cry32Eb1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.2	0.2	0.2	Cry32Ea1	Cry32Ea1	Cry32Ea1
+C577	Cry32Fa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32A	Cry32E	0.2	0.3	0.3	Cry32Ba1	Cry32Ga1	Cry32Ia1
+C578	Cry32Ga1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32A	Cry32E	0.3	0.3	0.3	Cry32Qa1	Cry32Fa1	Cry32Na1
+C579	Cry32Ha1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Hb1	Cry32Hb1	Cry32Hb1
+C580	Cry32Hb1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ha1	Cry32Ha1	Cry32Ha1
+C581	Cry32Ia1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ea1	Cry32Ra1	Cry32Fa1
+C582	Cry32Ja1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ra1	Cry32Qa1	Cry32Ra1
+C583	Cry32Ka1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ta1	Cry32Oa1	Cry32Ha1
+C584	Cry32La1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32C	Cry10A	0.2	0.2	0.3	Cry32Ba1	Cry32Ba1	Cry32Ba1
+C585	Cry32Ma1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32M	Cry41C	0.2	0.1	0.1	Cry32Mb1	Cry32Mb1	Cry41Ca1
+C586	Cry32Mb1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32M	Cry32A	0.2	0.1	0.3	Cry32Ma1	Cry32Ma1	Cry95Aa1
+C587	Cry32Na1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32M	Cry32E	0.3	0.2	0.3	Cry32Ia1	Cry32Ma1	Cry32Ga1
+C588	Cry32Oa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ha1	Cry32Hb1	Cry32Ra1
+C589	Cry32Pa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32M	Cry73B	0.2	0.2	0.1	Cry41Ba1	Cry62Aa1	Cry73Ba1
+C590	Cry32Qa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ta1	Cry32Ja1	Cry32Va1
+C591	Cry32Ra1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32E	Cry32E	0.3	0.3	0.3	Cry32Ja1	Cry32Ia1	Cry32Ja1
+C592	Cry32Sa1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32A	Cry32P	0.2	0.3	0.1	Cry4Ea1	Cry32Da1	Cry32Pa1
+C593	Cry32Ta1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32E	Cry32A	Cry32E	0.3	0.3	0.3	Cry32Qa1	Cry32Va1	Cry32Va1
+C594	Cry32Ua1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry32A	Cry32E	0.2	0.3	0.3	Cry32Da1	Cry32Da1	Cry32Da1
+C595	Cry32Va1	Cry32	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32A	Cry32A	Cry32E	0.3	0.3	0.3	Cry32Aa1	Cry32Ta1	Cry32Ta1
+C596	Cry39Aa1	Cry39	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry8B	Cry4C	Cry8F	0.3	0.3	0.4	Cry39Ab1	Cry39Ab1	Cry39Ab1
+C597	Cry39Ab1	Cry39	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry8B	Cry4C	Cry8F	0.3	0.3	0.4	Cry39Aa1	Cry39Aa1	Cry39Aa1
+C327	Cry3Aa1	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa4	Cry3Aa4	Cry3Ab1
+C332	Cry3Aa10	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa2	Cry3Aa2	Cry3Aa8
+C333	Cry3Aa11	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa2	Cry3Aa1	Cry3Aa2
+C334	Cry3Aa13	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa14	Cry3Aa4	Cry3Aa8
+C335	Cry3Aa14	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa13	Cry3Aa4	Cry3Aa8
+C328	Cry3Aa2	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa1	Cry3Aa4	Cry3Aa1
+C329	Cry3Aa4	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa1	Cry3Aa1	Cry3Aa9
+C330	Cry3Aa8	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa1	Cry3Aa2	Cry3Aa10
+C331	Cry3Aa9	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.8	0.9	0.9	Cry3Aa2	Cry3Aa1	Cry3Ab1
+C336	Cry3Ab1	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.9	0.9	0.9	Cry3Aa2	Cry3Aa11	Cry3Aa1
+C337	Cry3Ba1	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Ba2	Cry3Ba2	Cry3Ba2
+C338	Cry3Ba2	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Ba1	Cry3Ba1	Cry3Ba1
+C339	Cry3Ba3	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Bc1	Cry3Bc1	Cry3Bc1
+C340	Cry3Bb1	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Bb2	Cry3Bb2	Cry3Bb2
+C341	Cry3Bb2	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Bb1	Cry3Bb1	Cry3Bb1
+C343	Cry3Bc1	Cry3	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry3B	Cry3B	Cry3B	0.5	0.5	0.5	Cry3Ba3	Cry3Ba3	Cry3Ba3
+C344	Cry3Ca1	Cry3	Cry8 / Cry7 / Cry3	concordant	Cry3A	Cry3A	Cry3A	0.9	1.0	1.0	Cry3Aa2	Cry3Aa1	Cry3Aa11
+C598	Cry40Aa1	Cry40	other small families	mixed neighbourhood	Cry9A	Cry72A	Cry52B	0.5	0.2	0.1	Cry40Da1	Cry40Ca1	Cry52Ba1
+C599	Cry40Ba1	Cry40	other small families	mixed neighbourhood	Cry9A	Cry72A	Cry24C	0.5	0.2	0.1	Cry40Ea1	Cry40Ea1	Cry24Ca1
+C600	Cry40Ca1	Cry40	other small families	mixed neighbourhood	Cry9A	Cry72A	Cry40E	0.5	0.2	0.1	Cry40Ea1	Cry40Aa1	Cry40Ea1
+C601	Cry40Da1	Cry40	other small families	mixed neighbourhood	Cry9A	Cry72A	Cry52B	0.5	0.2	0.1	Cry40Aa1	Cry40Ea1	Cry52Ba1
+C602	Cry40Ea1	Cry40	other small families	mixed neighbourhood	Cry9A	Cry72A	Cry40C	0.5	0.2	0.1	Cry40Ba1	Cry40Ba1	Cry40Ca1
+C603	Cry41Aa1	Cry41	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32M	Cry41A	Cry41B	0.2	0.1	0.1	Cry41Ab1	Cry41Ab1	Cry41Ba1
+C604	Cry41Ab1	Cry41	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32M	Cry41A	Cry42A	0.2	0.1	0.1	Cry41Aa1	Cry41Aa1	Cry42Aa1
+C605	Cry41Ba1	Cry41	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry41A	Cry41A	0.2	0.2	0.1	Cry41Ca1	Cry41Ca1	Cry41Aa1
+C606	Cry41Ca1	Cry41	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry41A	Cry32M	0.2	0.2	0.1	Cry41Ba1	Cry41Ba1	Cry32Ma1
+C607	Cry42Aa1	Cry42	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry41A	Cry41A	0.2	0.2	0.1	Cry32Pa1	Cry62Aa1	Cry41Ab1
+C608	Cry43Aa1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.8	0.8	0.8	Cry43Aa2	Cry43Aa2	Cry43Aa2
+C609	Cry43Aa2	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.8	0.8	0.8	Cry43Aa1	Cry43Aa1	Cry43Aa1
+C610	Cry43Ba1	Cry43	other small families	mixed neighbourhood	Cry43C	Cry69A	Cry43C	0.8	0.3	0.8	Cry43Cd1	Cry69Ab1	Cry43Cd1
+C611	Cry43Ca1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cd4	Cry43Cd1	Cry43Cd4
+C612	Cry43Cb1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cd5	Cry43Cd5	Cry43Cd5
+C613	Cry43Cc1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Ca1	Cry43Cd4	Cry43Cd5
+C614	Cry43Cd1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cd3	Cry43Cd2	Cry43Cd2
+C615	Cry43Cd2	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cd1	Cry43Cd3	Cry43Cd3
+C616	Cry43Cd3	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cd1	Cry43Cd2	Cry43Cd2
+C617	Cry43Cd4	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Ca1	Cry43Cc1	Cry43Ca1
+C618	Cry43Cd5	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.7	0.7	0.7	Cry43Cb1	Cry43Cb1	Cry43Cb1
+C619	Cry43Da1	Cry43	other small families	concordant	Cry43C	Cry43C	Cry43C	0.8	0.8	0.8	Cry43Cd1	Cry43Ca1	Cry43Cd1
+C620	Cry44Aa1	Cry44	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry7F	Cry8E	Cry52B	0.5	0.4	0.1	Cry7Fb1	Cry4Fa1	Cry52Ba1
+C621	Cry47Aa1	Cry47	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8B	Cry8E	Cry7G	0.4	0.5	0.4	Cry8Bc1	Cry8Ba1	Cry7Gd1
+C622	Cry48Aa1	Cry48	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry32A	Cry48A	0.3	0.3	0.2	Cry48Ab1	Cry48Ab2	Cry48Ab1
+C623	Cry48Ab1	Cry48	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry32A	Cry48A	0.3	0.3	0.2	Cry48Ab2	Cry48Ab2	Cry48Ab2
+C624	Cry48Ab2	Cry48	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry32A	Cry48A	0.3	0.3	0.2	Cry48Ab1	Cry48Ab1	Cry48Ab1
+C345	Cry4Aa1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry48A	0.6	0.3	0.3	Cry4Aa2	Cry4Aa2	Cry4Aa2
+C346	Cry4Aa2	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry48A	0.6	0.3	0.3	Cry4Aa1	Cry4Aa1	Cry4Aa1
+C347	Cry4Ba1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4B	Cry4B	Cry4B	0.4	0.4	0.4	Cry4Ba6	Cry4Ba2	Cry4Ba4
+C348	Cry4Ba2	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4B	Cry4B	Cry4B	0.4	0.4	0.4	Cry4Ba6	Cry4Ba6	Cry4Ba1
+C349	Cry4Ba3	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4B	Cry4B	Cry4B	0.4	0.4	0.4	Cry4Ba6	Cry4Ba6	Cry4Ba1
+C350	Cry4Ba4	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4B	Cry4B	Cry4B	0.4	0.4	0.4	Cry4Ba6	Cry4Ba1	Cry4Ba1
+C351	Cry4Ba6	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4B	Cry4B	Cry4B	0.4	0.4	0.4	Cry4Ba2	Cry4Ba2	Cry4Ba1
+C352	Cry4Ca1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Ca2	Cry4Cb1	Cry4Cb3
+C353	Cry4Ca2	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Ca1	Cry4Cc1	Cry4Ca1
+C354	Cry4Cb1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Cb3	Cry4Ca1	Cry4Ca1
+C355	Cry4Cb2	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Cb3	Cry4Ca2	Cry4Ca1
+C356	Cry4Cb3	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Cb2	Cry4Cb2	Cry4Ca1
+C357	Cry4Cc1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4C	Cry4C	0.5	0.5	0.5	Cry4Cb1	Cry4Ca2	Cry4Ca1
+C358	Cry4Da1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry39A	Cry4C	0.2	0.2	0.6	Cry19Ba1	Cry52Ca1	Cry79Aa1
+C359	Cry4Ea1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry8B	Cry4C	Cry4C	0.2	0.5	0.6	Cry32Da1	Cry4Da1	Cry4Da1
+C360	Cry4Fa1	Cry4	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry4C	Cry4B	Cry54A	0.6	0.3	0.2	Cry28Aa1	Cry4Ea1	Cry54Aa1
+C625	Cry50Aa1	Cry50	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry4B	Cry4B	0.2	0.5	0.5	Cry50Ba1	Cry4Ba6	Cry4Ba1
+C626	Cry50Ba1	Cry50	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry39A	Cry4B	Cry4B	0.2	0.5	0.5	Cry50Ba2	Cry50Ba2	Cry50Ba2
+C627	Cry50Ba2	Cry50	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry39A	Cry4B	Cry4B	0.2	0.5	0.5	Cry50Ba1	Cry50Ba1	Cry50Ba1
+C628	Cry52Aa1	Cry52	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry39A	Cry40A	0.2	0.2	0.1	Cry52Ba1	Cry52Ba1	Cry40Aa1
+C629	Cry52Ba1	Cry52	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry39A	Cry40A	0.2	0.2	0.1	Cry52Aa1	Cry52Aa1	Cry40Aa1
+C630	Cry52Ca1	Cry52	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry50B	Cry39A	Cry40A	0.2	0.2	0.1	Cry52Ba1	Cry4Da1	Cry40Aa1
+C631	Cry53Aa1	Cry53	other small families	mixed neighbourhood	Cry8B	Cry43C	Cry1J	0.4	0.7	0.2	Cry53Ab1	Cry53Ab1	Cry53Ab1
+C632	Cry53Ab1	Cry53	other small families	mixed neighbourhood	Cry8B	Cry43C	Cry1J	0.4	0.7	0.2	Cry53Aa1	Cry53Aa1	Cry53Aa1
+C633	Cry54Aa1	Cry54	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry10A	Cry4B	Cry54B	0.3	0.5	0.2	Cry54Ab1	Cry54Ab1	Cry54Aa2
+C634	Cry54Aa2	Cry54	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry10A	Cry4B	Cry54B	0.3	0.5	0.2	Cry54Aa1	Cry54Aa1	Cry54Aa1
+C635	Cry54Ab1	Cry54	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry10A	Cry4B	Cry54B	0.3	0.5	0.2	Cry54Aa1	Cry54Aa1	Cry4Fa1
+C636	Cry54Ba1	Cry54	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry54A	Cry54A	0.3	0.3	0.2	Cry54Ba2	Cry54Ba2	Cry54Ba2
+C637	Cry54Ba2	Cry54	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry54A	Cry54A	Cry54A	0.3	0.3	0.2	Cry54Ba1	Cry54Ba1	Cry54Ba1
+C638	Cry56Aa1	Cry56	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry56A	0.3	0.3	0.3	Cry56Aa2	Cry56Aa2	Cry56Aa2
+C639	Cry56Aa2	Cry56	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry56A	0.3	0.3	0.3	Cry56Aa1	Cry56Aa1	Cry56Aa4
+C640	Cry56Aa3	Cry56	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry56A	0.3	0.3	0.3	Cry56Aa1	Cry56Aa4	Cry56Aa2
+C641	Cry56Aa4	Cry56	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry56A	Cry56A	Cry56A	0.3	0.3	0.3	Cry56Aa1	Cry56Aa2	Cry56Aa2
+C642	Cry57Aa1	Cry57	other small families	mixed neighbourhood	Cry4B	Cry48A	Cry43C	0.5	0.3	0.6	Cry57Ab1	Cry57Ab1	Cry57Ab1
+C643	Cry57Ab1	Cry57	other small families	mixed neighbourhood	Cry4B	Cry48A	Cry43C	0.5	0.3	0.6	Cry57Aa1	Cry57Aa1	Cry57Aa1
+C644	Cry58Aa1	Cry58	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry21Ia1	Cry5Fa1	Cry5Ca1
+C645	Cry59Aa1	Cry59	other small families	mixed neighbourhood	Cry24B	Cry9A	Cry8F	0.1	0.5	0.4	Cry24Ba1	Cry59Ba1	Cry59Ba1
+C646	Cry59Ba1	Cry59	other small families	mixed neighbourhood	Cry9A	Cry9A	Cry8F	0.5	0.5	0.4	Cry40Da1	Cry59Aa1	Cry59Aa1
+C361	Cry5Aa1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry5A	Cry5A	0.3	0.3	0.3	Cry5Ab1	Cry5Ab1	Cry5Ab1
+C362	Cry5Ab1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry5A	Cry5A	0.3	0.3	0.3	Cry5Aa1	Cry5Ad1	Cry5Aa1
+C363	Cry5Ac1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry5A	Cry5A	0.3	0.3	0.3	Cry5Ad1	Cry5Aa1	Cry5Ad1
+C364	Cry5Ad1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry5A	Cry5A	0.3	0.3	0.3	Cry5Aa1	Cry5Ab1	Cry5Ac1
+C365	Cry5Ba1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry5A	0.3	0.3	0.4	Cry5Ba2	Cry5Ba2	Cry5Ba2
+C366	Cry5Ba2	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry5A	0.3	0.3	0.4	Cry5Ba1	Cry5Ba3	Cry5Ba3
+C367	Cry5Ba3	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry5A	0.3	0.3	0.4	Cry5Ba2	Cry5Ba2	Cry5Ba2
+C368	Cry5Ca1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry21A	Cry21A	Cry21C	0.3	0.3	0.2	Cry21Da1	Cry21Ha1	Cry21Da1
+C369	Cry5Da1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry70B	Cry21A	0.4	0.2	0.3	Cry21Ga1	Cry12Aa1	Cry21Ca1
+C370	Cry5Ea1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry5A	Cry5A	Cry5A	0.4	0.4	0.4	Cry5Ad1	Cry5Ab1	Cry5Ba1
+C371	Cry5Fa1	Cry5	Cry21 / Cry5 / Cry14 +3	mixed neighbourhood	Cry14A	Cry21A	Cry11A	0.3	0.3	0.4	Cry21Ha1	Cry21Ca1	Cry11Ba1
+C647	Cry61Aa1	Cry61	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.4	0.5	0.4	Cry61Aa2	Cry61Aa2	Cry61Aa2
+C648	Cry61Aa2	Cry61	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.4	0.5	0.4	Cry61Aa1	Cry61Aa1	Cry61Aa1
+C649	Cry62Aa1	Cry62	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry69A	Cry32M	Cry32A	0.3	0.2	0.3	Cry32Ca1	Cry32Pa1	Cry32Mb1
+C651	Cry65Aa1	Cry65	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry2A	Cry41A	Cry24D	0.6	0.2	0.1	Cry95Aa1	Cry95Aa1	Cry24Da1
+C652	Cry66Aa1	Cry66	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry41A	Cry41A	Cry32E	0.2	0.2	0.3	Cry41Aa1	Cry65Aa1	Cry32Ua1
+C653	Cry67Aa1	Cry67	other small families	mixed neighbourhood	Cry41A	Cry32M	Cry8C	0.2	0.2	0.5	Cry32Da1	Cry42Aa1	Cry8Ca3
+C654	Cry68Aa1	Cry68	other small families	mixed neighbourhood	Cry9A	Cry9A	Cry43C	0.3	0.5	0.8	Cry40Da1	Cry9Ga1	Cry24Ba1
+C655	Cry69Aa1	Cry69	other small families	mixed neighbourhood	Cry69A	Cry8E	Cry43C	0.2	0.3	0.6	Cry69Aa2	Cry69Aa2	Cry69Aa2
+C656	Cry69Aa2	Cry69	other small families	mixed neighbourhood	Cry69A	Cry8E	Cry43C	0.2	0.3	0.6	Cry69Aa1	Cry69Aa1	Cry69Aa1
+C657	Cry69Ab1	Cry69	other small families	mixed neighbourhood	Cry69A	Cry8E	Cry43C	0.2	0.3	0.6	Cry69Aa1	Cry69Aa1	Cry69Aa1
+C658	Cry70Aa1	Cry70	other small families	concordant	Cry31A	Cry31A	Cry31A	0.7	0.7	0.7	Cry70Bb1	Cry70Ca1	Cry70Bb1
+C659	Cry70Ba1	Cry70	other small families	concordant	Cry31A	Cry31A	Cry31A	0.7	0.7	0.7	Cry70Bb1	Cry70Bb1	Cry70Bb1
+C660	Cry70Bb1	Cry70	other small families	concordant	Cry31A	Cry31A	Cry31A	0.7	0.7	0.7	Cry70Ba1	Cry70Ba1	Cry70Ba1
+C661	Cry70Ca1	Cry70	other small families	concordant	Cry31A	Cry31A	Cry31A	0.7	0.7	0.7	Cry70Bb1	Cry70Bb1	Cry70Bb1
+C662	Cry71Aa1	Cry71	other small families	concordant	Cry43C	Cry43C	Cry43C	0.8	0.8	0.8	Cry43Cd1	Cry43Ca1	Cry72Aa2
+C663	Cry72Aa1	Cry72	other small families	mixed neighbourhood	Cry8P	Cry53A	Cry43C	0.3	0.2	0.8	Cry72Aa2	Cry72Aa2	Cry72Aa2
+C664	Cry72Aa2	Cry72	other small families	mixed neighbourhood	Cry8P	Cry53A	Cry43C	0.3	0.2	0.8	Cry72Aa1	Cry72Aa1	Cry72Aa1
+C665	Cry73Aa1	Cry73	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32M	Cry32M	Cry32P	0.2	0.2	0.1	Cry73Ba1	Cry32Ma1	Cry32Pa1
+C666	Cry73Ba1	Cry73	Cry32 / Cry41 / Cry73 +3	mixed neighbourhood	Cry32M	Cry32M	Cry32P	0.2	0.2	0.1	Cry32Mb1	Cry32Ma1	Cry32Pa1
+C667	Cry79Aa1	Cry79	other small families	mixed neighbourhood	Cry8B	Cry9A	Cry4C	0.4	0.5	0.6	Cry8Bc1	Cry59Ba1	Cry4Da1
+C372	Cry7Aa1	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Aa2	Cry7Ab6	Cry7Ab3
+C373	Cry7Aa2	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Aa1	Cry7Ab6	Cry7Ab3
+C374	Cry7Ab1	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab6	Cry7Ab6	Cry7Ab4
+C375	Cry7Ab2	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab9	Cry7Ab9	Cry7Ab3
+C376	Cry7Ab3	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab6	Cry7Ab2	Cry7Ab2
+C377	Cry7Ab4	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab3	Cry7Ab3	Cry7Ab1
+C378	Cry7Ab5	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab4	Cry7Ab9	Cry7Ab4
+C379	Cry7Ab6	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab3	Cry7Ab3	Cry7Ab4
+C380	Cry7Ab9	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab2	Cry7Ab2	Cry7Ab6
+C381	Cry7Ac1	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.9	0.9	Cry7Ab4	Cry7Ab4	Cry7Ab4
+C382	Cry7Ba1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry7A	0.4	0.5	0.5	Cry7Bb1	Cry7Bb1	Cry7Da1
+C383	Cry7Bb1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry7A	0.4	0.5	1.0	Cry7Ba1	Cry7Ba1	Cry7Ac1
+C384	Cry7Ca1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry8P	0.5	0.5	0.3	Cry7Cb1	Cry7Ea1	Cry7La1
+C385	Cry7Cb1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry8D	0.5	0.5	0.3	Cry7Ca1	Cry7Ea1	Cry8Db1
+C386	Cry7Da1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8A	Cry7A	0.7	0.4	0.5	Cry7Ga1	Cry8Aa1	Cry7Ba1
+C387	Cry7Ea1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry8P	0.5	0.5	0.3	Cry7Ea2	Cry7Ea2	Cry7Ea2
+C388	Cry7Ea2	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8K	Cry8P	0.5	0.5	0.3	Cry7Ea1	Cry7Ea1	Cry7Ea1
+C389	Cry7Fa1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry7F	Cry8C	Cry8D	0.4	0.5	0.2	Cry7Fa2	Cry7Fa2	Cry7Fa2
+C390	Cry7Fa2	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry7F	Cry8C	Cry8D	0.4	0.5	0.2	Cry7Fa1	Cry7Fa1	Cry7Fa1
+C391	Cry7Fb1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry7F	Cry8C	Cry7G	0.4	0.5	0.4	Cry7Fb2	Cry7Fb2	Cry7Fb2
+C392	Cry7Fb2	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry7F	Cry8C	Cry7G	0.4	0.5	0.4	Cry7Fb1	Cry7Fb1	Cry7Fb1
+C393	Cry7Fb3	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry7F	Cry8C	Cry7G	0.4	0.5	0.4	Cry7Fb1	Cry7Fb1	Cry7Fb1
+C394	Cry7Ga1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.7	0.5	0.3	Cry7Gc1	Cry7Gd1	Cry7Gc1
+C395	Cry7Gb1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.7	0.5	0.3	Cry7Gc1	Cry7Gc1	Cry7Gc1
+C396	Cry7Gc1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.7	0.5	0.3	Cry7Gb1	Cry7Gb1	Cry7Gb1
+C397	Cry7Gd1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8K	Cry7G	0.7	0.5	0.3	Cry7Ga1	Cry7Gc1	Cry7Gc1
+C398	Cry7Ha1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry7A	Cry7G	0.5	0.7	0.4	Cry7Ha2	Cry7Ha2	Cry7Ha2
+C399	Cry7Ha2	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry7A	Cry7G	0.5	0.7	0.4	Cry7Ha1	Cry7Ha1	Cry7Ha1
+C400	Cry7Ia1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry7A	Cry7A	0.4	1.0	0.5	Cry7Ba1	Cry7Ab4	Cry7Da1
+C401	Cry7Ja1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8C	Cry8P	0.7	0.5	0.3	Cry7Ga1	Cry8Ca1	Cry1Jd1
+C402	Cry7Ka1	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.7	0.8	Cry7Ab3	Cry7Kb1	Cry7Kb1
+C403	Cry7Kb1	Cry7	Cry8 / Cry7 / Cry3	concordant	Cry7A	Cry7A	Cry7A	0.9	0.7	0.8	Cry7Ka1	Cry7Ka1	Cry7Ka1
+C404	Cry7La1	Cry7	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8I	Cry8E	Cry8P	0.4	0.5	0.3	Cry61Aa2	Cry8Ba1	Cry7Ca1
+C405	Cry8Aa1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8A	Cry8A	Cry1B	0.3	0.3	0.5	Cry8Ab1	Cry8Ad1	Cry8Ad1
+C406	Cry8Ab1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8A	Cry8A	Cry1B	0.3	0.3	0.4	Cry8Ac1	Cry8Ac1	Cry8Ac1
+C407	Cry8Ac1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8A	Cry8A	Cry1B	0.3	0.3	0.4	Cry8Ab1	Cry8Ab1	Cry8Qa1
+C408	Cry8Ad1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry1I	Cry8A	Cry1B	0.7	0.3	0.5	Cry8Da1	Cry8Aa1	Cry1Cc1
+C409	Cry8Ba1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8F	0.4	0.3	0.4	Cry8Ba2	Cry8Ba2	Cry8Ba2
+C410	Cry8Ba2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8F	0.4	0.3	0.4	Cry8Ba1	Cry8Ba1	Cry8Ba1
+C411	Cry8Bb1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8C	0.4	0.3	0.5	Cry8Bc1	Cry8Bc1	Cry8Ca3
+C412	Cry8Bc1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry1B	0.4	0.3	0.4	Cry8Bb1	Cry8Bb1	Cry8Ac1
+C413	Cry8Ca1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8C	0.4	0.4	0.4	Cry8Ca5	Cry8Ca4	Cry8Ja1
+C414	Cry8Ca2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8C	0.4	0.4	0.4	Cry8Ca5	Cry8Ca4	Cry8Ca4
+C415	Cry8Ca3	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8C	0.4	0.4	0.4	Cry8Ca2	Cry8Ca2	Cry8Ca5
+C416	Cry8Ca4	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8C	0.4	0.4	0.4	Cry8Ca1	Cry8Ca2	Cry8Ja1
+C417	Cry8Ca5	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8C	0.4	0.4	0.4	Cry8Ca1	Cry8Ca1	Cry8Ca2
+C418	Cry8Da1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry1I	Cry8A	Cry1F	0.7	0.4	0.3	Cry8Db1	Cry8Da2	Cry8Da2
+C419	Cry8Da2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry1I	Cry8A	Cry1F	0.7	0.4	0.3	Cry8Da1	Cry8Da1	Cry8Da1
+C420	Cry8Db1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry1I	Cry8A	Cry7B	0.7	0.4	0.2	Cry8Da1	Cry8Da1	Cry7Da1
+C421	Cry8Ea1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8E	0.4	0.4	0.4	Cry8Ea6	Cry8Ja1	Cry8Ea4
+C422	Cry8Ea2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8E	0.4	0.4	0.4	Cry8Ea3	Cry8Ea6	Cry8Ea6
+C423	Cry8Ea3	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8E	0.4	0.4	0.4	Cry8Ea1	Cry8Ea1	Cry8Ea1
+C424	Cry8Ea4	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8E	0.4	0.4	0.4	Cry8Ea2	Cry8Ea1	Cry8Ea1
+C425	Cry8Ea6	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8E	0.4	0.4	0.4	Cry8Ja1	Cry8Ea2	Cry8Ea2
+C426	Cry8Fa1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8F	Cry8K	Cry8F	0.3	0.5	0.3	Cry8Fa3	Cry8Fa4	Cry8Fa4
+C427	Cry8Fa2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8F	Cry8K	Cry8F	0.3	0.5	0.3	Cry8Fa1	Cry8Fa1	Cry8Fa3
+C428	Cry8Fa3	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8F	Cry8K	Cry8F	0.3	0.5	0.3	Cry8Fa1	Cry8Fa1	Cry8Fa4
+C429	Cry8Fa4	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8F	Cry8K	Cry8F	0.3	0.5	0.3	Cry8Fa1	Cry8Fa1	Cry8Fa3
+C430	Cry8Ga1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry8F	0.5	0.5	0.4	Cry8Ga2	Cry8Ga2	Cry8Ga2
+C431	Cry8Ga2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry8F	0.5	0.5	0.4	Cry8Ga1	Cry8Ga1	Cry8Ga1
+C432	Cry8Ha1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8B	Cry8E	Cry1F	0.4	0.5	0.3	Cry8Hb1	Cry8Hb1	Cry8Hb1
+C433	Cry8Hb1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8B	Cry8E	Cry1F	0.4	0.5	0.3	Cry8Ha1	Cry8Ha1	Cry8Ha1
+C434	Cry8Ia1	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ia2	Cry8Ia2	Cry8Ia2
+C435	Cry8Ia2	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ia1	Cry8Ia1	Cry8Ia4
+C436	Cry8Ia3	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ia4	Cry8Ia4	Cry8Ia4
+C437	Cry8Ia4	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ia3	Cry8Ia3	Cry8Ia2
+C438	Cry8Ib1	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ib3	Cry8Ib2	Cry8Ib2
+C439	Cry8Ib2	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ib1	Cry8Ib3	Cry8Ib1
+C440	Cry8Ib3	Cry8	Cry8 / Cry7 / Cry3	concordant	Cry8I	Cry8I	Cry8I	0.6	0.6	0.6	Cry8Ib1	Cry8Ib2	Cry8Ib1
+C441	Cry8Ja1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8E	Cry8C	0.5	0.5	0.5	Cry8Ea6	Cry8Ea1	Cry8Ca4
+C442	Cry8Ka1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry8I	0.4	0.4	0.6	Cry8Ka2	Cry8Ka2	Cry8Ka2
+C443	Cry8Ka2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry8I	0.4	0.4	0.6	Cry8Ka3	Cry8Ka3	Cry8Ka3
+C444	Cry8Ka3	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry8I	0.4	0.4	0.6	Cry8Ka2	Cry8Ka2	Cry8Ka2
+C445	Cry8Kb1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry1B	0.4	0.4	0.5	Cry8Kb2	Cry8Kb2	Cry8Kb2
+C446	Cry8Kb2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8K	Cry8K	Cry1B	0.4	0.4	0.5	Cry8Kb1	Cry8Kb1	Cry8Kb1
+C447	Cry8La1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry4B	Cry8I	0.5	0.3	0.7	Cry8Na1	Cry8Ma2	Cry8Ib3
+C448	Cry8Ma1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8A	Cry4B	Cry43C	0.4	0.3	0.8	Cry8Ma2	Cry8Ma2	Cry8Ma2
+C449	Cry8Ma2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8A	Cry4B	Cry43C	0.4	0.3	0.8	Cry8Ma1	Cry8Ma1	Cry8Ma1
+C450	Cry8Na1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8C	Cry8C	Cry8I	0.5	0.5	0.6	Cry8Ga1	Cry8Sa1	Cry8Ka2
+C451	Cry8Pa1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8P	0.5	0.4	0.2	Cry8Pa2	Cry8Pa2	Cry8Pa2
+C452	Cry8Pa2	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8P	0.5	0.4	0.2	Cry8Pa1	Cry8Pa3	Cry8Pa3
+C453	Cry8Pa3	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8E	Cry8B	Cry8P	0.5	0.4	0.2	Cry8Pa1	Cry8Pa2	Cry8Pa2
+C454	Cry8Qa1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8F	Cry8K	Cry1B	0.4	0.5	0.4	Cry8Fa1	Cry8Fa1	Cry8Ac1
+C455	Cry8Ra1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry1I	Cry8A	Cry1B	0.6	0.4	0.5	Cry8Ad1	Cry8Da1	Cry1Ja1
+C456	Cry8Sa1	Cry8	Cry8 / Cry7 / Cry3	mixed neighbourhood	Cry8B	Cry8C	Cry8I	0.4	0.5	0.7	Cry8Bc1	Cry8Na1	Cry8Ib3
+C668	Cry95Aa1	Cry95	Cry4 / Cry30 / Cry54 +15	mixed neighbourhood	Cry2A	Cry41A	Cry32A	0.6	0.2	0.3	Cry65Aa1	Cry65Aa1	Cry32Mb1
+C669	Cry97Aa1	Cry97	Cry2 / Cry11 / Cry18 +2	mixed neighbourhood	Cry11A	Cry8E	Cry43C	0.4	0.4	0.6	Cry11Aa1	Cry4Fa1	Cry32Pa1
+C458	Cry9Aa1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry9A	0.4	0.4	0.4	Cry9Aa7	Cry9Aa2	Cry9Aa5
+C459	Cry9Aa2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry9A	0.4	0.4	0.4	Cry9Aa1	Cry9Aa7	Cry9Aa1
+C460	Cry9Aa4	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry9A	0.4	0.4	0.4	Cry9Aa1	Cry9Aa2	Cry9Aa1
+C461	Cry9Aa5	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry9A	0.4	0.4	0.4	Cry9Aa1	Cry9Aa2	Cry9Aa1
+C462	Cry9Aa7	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry9A	0.4	0.4	0.4	Cry9Aa1	Cry9Aa2	Cry9Aa1
+C463	Cry9Ba1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9D	Cry9E	0.8	0.6	0.5	Cry9Ba2	Cry9Ba2	Cry9Ba2
+C464	Cry9Ba2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9D	Cry9E	0.8	0.6	0.5	Cry9Ba1	Cry9Ba1	Cry9Ba1
+C465	Cry9Bb1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9D	Cry9E	0.8	0.6	0.5	Cry9Ba1	Cry9Ba2	Cry9Ee1
+C466	Cry9Ca1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8A	Cry9E	Cry9E	0.4	0.8	0.4	Cry9Ca2	Cry9Ca2	Cry9Ca2
+C467	Cry9Ca2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8A	Cry9E	Cry9E	0.4	0.8	0.4	Cry9Ca1	Cry9Ca1	Cry9Ca1
+C468	Cry9Cb1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry8A	Cry9E	Cry9E	0.4	0.8	0.4	Cry9Ca1	Cry9Ca1	Cry9Ca1
+C469	Cry9Da1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Da4	Cry9Da3	Cry9Da2
+C470	Cry9Da2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Da1	Cry9Da1	Cry9Da3
+C471	Cry9Da3	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Da1	Cry9Da1	Cry9Da4
+C472	Cry9Da4	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Da1	Cry9Da1	Cry9Da3
+C473	Cry9Db1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Dc1	Cry9Dc1	Cry9Da1
+C474	Cry9Dc1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9D	Cry9D	Cry9E	0.5	0.5	0.5	Cry9Db1	Cry9Db1	Cry9Ba1
+C475	Cry9Ea1	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea4	Cry9Ea7	Cry9Ea11
+C482	Cry9Ea10	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea4	Cry9Ea1
+C483	Cry9Ea11	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea1	Cry9Ea1
+C476	Cry9Ea3	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea4	Cry9Ea1
+C477	Cry9Ea4	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea1	Cry9Ea1
+C478	Cry9Ea5	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea1	Cry9Ea1
+C479	Cry9Ea6	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea8	Cry9Ea4	Cry9Ea1
+C480	Cry9Ea7	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea1	Cry9Ea1	Cry9Ea1
+C481	Cry9Ea8	Cry9	Cry9 / Cry61 / Cry26 +1	concordant	Cry9E	Cry9E	Cry9E	1.0	1.0	0.9	Cry9Ea6	Cry9Ea4	Cry9Ea1
+C484	Cry9Eb1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9D	0.7	1.0	0.5	Cry9Eb3	Cry9Eb3	Cry9Eb3
+C485	Cry9Eb2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9D	0.7	1.0	0.5	Cry9Eb1	Cry9Eb1	Cry9Eb1
+C486	Cry9Eb3	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9D	0.7	1.0	0.5	Cry9Eb1	Cry9Eb1	Cry9Eb1
+C487	Cry9Ec1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9E	1.0	0.7	0.4	Cry9Ee1	Cry9Ed1	Cry9Ed1
+C488	Cry9Ed1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9E	1.0	0.7	0.4	Cry9Ea1	Cry9Ec1	Cry9Ec1
+C489	Cry9Ee1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9D	1.0	0.7	0.5	Cry9Ee2	Cry9Ee2	Cry9Ee2
+C490	Cry9Ee2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry9D	1.0	0.7	0.5	Cry9Ee1	Cry9Ee1	Cry9Ee1
+C491	Cry9Fa1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9E	Cry9E	Cry1B	0.7	0.4	0.7	Cry9Eb1	Cry9Ca1	Cry1La1
+C492	Cry9Ga1	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry1A	0.5	0.5	0.6	Cry9Aa1	Cry9Ga2	Cry9Ga2
+C493	Cry9Ga2	Cry9	Cry9 / Cry61 / Cry26 +1	mixed neighbourhood	Cry9A	Cry9A	Cry1A	0.5	0.5	0.6	Cry9Aa1	Cry9Ga1	Cry9Ga1

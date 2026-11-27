@@ -1,0 +1,8 @@
+frame_col	residue	module	freq_nematode	freq_insect	Cry5Ba1_residue_no	Cry1Aa1_residue_no	freq_Cry5	freq_Cry12	freq_Cry13	freq_Cry14	freq_Cry21	freq_Cry95
+233	M	N-term	0.941	0.0	1	4	1.0	1.0	1.0	1.0	1.0	0.0
+1844	E	DIII	0.941	0.0	567	476	1.0	1.0	1.0	1.0	1.0	0.0
+1650	Y	DII	0.882	0.0	516	435	0.86	1.0	1.0	1.0	1.0	0.0
+2124	Y	DIII	0.941	0.069	659	565	1.0	1.0	1.0	1.0	1.0	0.0
+793	K	DI	0.824	0.006	269	193	0.71	1.0	1.0	1.0	0.75	1.0
+1644	K	DII	0.824	0.006	511	430	0.71	1.0	1.0	1.0	1.0	0.0
+813	F	DI	0.824	0.017	287	211	0.86	1.0	1.0	1.0	0.75	0.0

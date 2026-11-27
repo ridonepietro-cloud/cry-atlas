@@ -1221,7 +1221,7 @@ function renderOvPanel() {
   h += '<div class="sub chips"><span class="muted">interaction type:</span>' + types.map(function (t) { return ovChip("con.types." + t, TYPE_LABEL[t], "var(--t-" + t.toLowerCase() + ")"); }).join("") + "</div>";
   h += '<div class="sub chips">' + ovChip("mcmc", "Include backbone–backbone (MC:MC)", null, "Same switch as the Partners toolbar chip: MC:MC contacts are hidden by default") + "</div>";
   h += '<div class="note">Each enabled type has its own fixed position inside the residue cell. Filled dot = inter-chain contact, ring = intra-chain contact, filled with a dark outline = both. Taller rows give larger dots.</div>';
-  if ((S.meta.marks || []).length) h += "<h3>Pivot points inferred from the mechanism</h3>";
+  if ((S.meta.marks || []).length) h += "<h3>" + (SYS === "cry" ? "Marked sites (ligand contacts, nematode signature)" : "Pivot points inferred from the mechanism") + "</h3>";
   (S.meta.marks || []).forEach(function (m) {
     h += '<div class="mk"><span class="star" style="color:' + m.color + '">' + (m.glyph === "diamond" ? "\u25C6" : "\u2605") + '</span><b>' + esc(m.label) + "</b>" + ovChip("marks." + m.id + ".on", m.glyph === "diamond" ? "diamond" : "star", null, m.note) + (m.cols ? "" : ovChip("marks." + m.id + ".guide", "guide line", null, "Dashed vertical line at the marked column")) +
       '<span class="muted">' + esc(m.note.split(":")[0]) + "</span></div>";
@@ -3294,7 +3294,7 @@ function presetTV(p) {
   var f = S.frame, t = S.tv;
   if (p === "A" || p === "B" || p === "AB") { t.mode = "single"; t.left = f + "_" + p; }
   else if (S.meta.homo && S.meta.tangle) {                   // homo packs with several trees: the tree of the alignment on screen against another tree (default: the full-length tree)
-    var td0 = S.meta.tangle["default"] || []; t.mode = "tangle"; t.left = S.trees.trees[f + "_A"] ? f + "_A" : td0[0]; var alt = td0[1] && (S.trees.trees[f + td0[1].slice(td0[1].indexOf("_"))] ? f + td0[1].slice(td0[1].indexOf("_")) : td0[1]);
+    var td0 = S.meta.tangle["default"] || []; t.mode = "tangle"; var fr0 = function (k) { var k2 = f + k.slice(k.indexOf("_")); return S.trees.trees[k2] ? k2 : k; }; t.left = td0[0] ? fr0(td0[0]) : f + "_A"; var alt = td0[1] && fr0(td0[1]);
     t.right = alt && alt !== t.left && S.trees.trees[alt] ? alt : Object.keys(S.trees.trees).filter(function (k) { return k !== t.left; })[0];
   } else { t.mode = "tangle"; t.left = f + "_A"; t.right = f + "_B"; }
   tvSave(); renderTrees();
